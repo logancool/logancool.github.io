@@ -3,13 +3,16 @@ const SRC_DIR = path.join(__dirname, '/react-client/src');
 const DIST_DIR = path.join(__dirname, '/react-client/dist');
 const webpack = require('webpack');
 module.exports = {
+    mode: 'production',
+    // Enable sourcemaps for debugging webpack's output.
+    devtool: 'source-map',
     entry: `${SRC_DIR}/index.tsx`,
     output: {
         path: DIST_DIR,
         filename: 'bundle.js',
     },
     resolve: {
-        extensions: ['.js', '.', '.json', '.css'],
+        extensions: ['.js', '.', '.json', '.css', '.ts', '.tsx'],
     },
     module: {
         rules: [
