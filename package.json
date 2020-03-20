@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d client/dist",
+        "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
         "dev": "webpack -d --watch",
         "start": "node ./server/index.js",
         "build": "webpack -p",

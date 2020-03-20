@@ -3,3 +3,6 @@ node_modules/
 
 # Failed yarn logs
 yarn-error.log
+
+# Extra mac files
+.DS_Store
