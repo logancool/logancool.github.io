@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+
+# Failed yarn logs
+yarn-error.log
