@@ -1,6 +1,6 @@
 const path = require('path');
-const SRC_DIR = path.join(__dirname, '/react-client/src');
-const DIST_DIR = path.join(__dirname, '/react-client/dist');
+const SRC_DIR = path.join(__dirname, '/client/src');
+const DIST_DIR = path.join(__dirname, '/client/dist');
 const webpack = require('webpack');
 module.exports = {
     mode: 'production',
