@@ -1,7 +1,18 @@
+@import './webfonts.scss';
+// Typography
+
+// Font mapping
+$font-regular: 'Maitree Regular', sans-serif;
+$font-medium: 'Maitree Medium', sans-serif;
+$font-bold: 'Maitree Bold', sans-serif;
+$font-semi-bold: 'Maitree Semi Bold', sans-serif;
+$font-light: 'Maitree Light', sans-serif;
+$font-extra-light: 'Maitree Extra Light', sans-serif;
+
 body {
-    background-color: grey;
+    font-family: $font-regular;
 }
 
 header {
-    color: blue;
+    font-family: $font-medium;
 }

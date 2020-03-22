@@ -65,6 +65,18 @@ module.exports = (env, argv) => {
                     loader: 'file-loader',
                 },
                 {
+                    test: /\.(woff|woff2|ttf|otf|eot)$/,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                outputPath: `fonts/`,
+                                publicPath: 'client/dist/fonts',
+                            },
+                        },
+                    ],
+                },
+                {
                     test: /\.js?/,
                     include: SRC_DIR,
                     use: ['source-map-loader'],
