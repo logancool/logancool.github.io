@@ -4,9 +4,9 @@ const PORT = process.env.PORT || 8080;
 const path = require('path');
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(`${__dirname}/../client/dist`));
+app.use(express.static(`${__dirname}/../`));
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(`${__dirname}/../client/dist/index.html`));
+    res.sendFile(__dirname, '/../');
 });
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}!`);
