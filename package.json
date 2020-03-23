@@ -4,9 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "deploy": "npm run build",
         "start": "webpack-dev-server -d --hot --watch",
-        "build": "webpack -p"
+        "build:prod": "webpack -p",
+        "build:dev": "webpack -d",
+        "deploy": "yarn build:prod"
     },
     "repository": {
         "type": "git",
