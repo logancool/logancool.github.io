@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server -d --hot --watch",
         "build:prod": "webpack -p",
         "build:dev": "webpack -d",
+        "start": "yarn build:dev && webpack-dev-server -d --hot --watch",
         "deploy": "yarn build:prod"
     },
     "repository": {
