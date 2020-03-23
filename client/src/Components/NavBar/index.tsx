@@ -8,7 +8,7 @@ class NavBar extends Component {
             <header>
                 <ul id="headerButtons">
                     <li className={styles.container}>
-                        <Link to="">Home</Link>
+                        <Link to="">Homer Simpson</Link>
                     </li>
                 </ul>
             </header>
