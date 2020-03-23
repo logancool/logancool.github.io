@@ -163,7 +163,7 @@ eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/run
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/82021b44ae936aa79225da93b12e39b4.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1ib2xkLnR0Zi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2NsaWVudC9zcmMvZm9udHMvTWFpdHJlZS9NYWl0cmVlLWJvbGQudHRmP2RlMjMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyBcImZvbnRzLzgyMDIxYjQ0YWU5MzZhYTc5MjI1ZGE5M2IxMmUzOWI0LnR0ZlwiOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-bold.ttf\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"client/dist/fonts/82021b44ae936aa79225da93b12e39b4.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1ib2xkLnR0Zi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2NsaWVudC9zcmMvZm9udHMvTWFpdHJlZS9NYWl0cmVlLWJvbGQudHRmP2RlMjMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCJjbGllbnQvZGlzdC9mb250cy84MjAyMWI0NGFlOTM2YWE3OTIyNWRhOTNiMTJlMzliNC50dGZcIjsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-bold.ttf\n");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/84f8f612a4d41651af8c24ac229d7167.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1leHRyYS1saWdodC50dGYuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1leHRyYS1saWdodC50dGY/ZDZkYSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArIFwiZm9udHMvODRmOGY2MTJhNGQ0MTY1MWFmOGMyNGFjMjI5ZDcxNjcudHRmXCI7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-extra-light.ttf\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"client/dist/fonts/84f8f612a4d41651af8c24ac229d7167.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1leHRyYS1saWdodC50dGYuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1leHRyYS1saWdodC50dGY/ZDZkYSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBcImNsaWVudC9kaXN0L2ZvbnRzLzg0ZjhmNjEyYTRkNDE2NTFhZjhjMjRhYzIyOWQ3MTY3LnR0ZlwiOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-extra-light.ttf\n");
 
 /***/ }),
 
@@ -187,7 +187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/98a25a11fb06c97142f7a587a1183b83.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1saWdodC50dGYuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1saWdodC50dGY/OTc1OCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArIFwiZm9udHMvOThhMjVhMTFmYjA2Yzk3MTQyZjdhNTg3YTExODNiODMudHRmXCI7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-light.ttf\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"client/dist/fonts/98a25a11fb06c97142f7a587a1183b83.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1saWdodC50dGYuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1saWdodC50dGY/OTc1OCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBcImNsaWVudC9kaXN0L2ZvbnRzLzk4YTI1YTExZmIwNmM5NzE0MmY3YTU4N2ExMTgzYjgzLnR0ZlwiOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-light.ttf\n");
 
 /***/ }),
 
@@ -199,7 +199,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/44b741a0a6a50232ff6420600a8ca9b8.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1tZWRpdW0udHRmLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vY2xpZW50L3NyYy9mb250cy9NYWl0cmVlL01haXRyZWUtbWVkaXVtLnR0Zj83OTRjIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IF9fd2VicGFja19wdWJsaWNfcGF0aF9fICsgXCJmb250cy80NGI3NDFhMGE2YTUwMjMyZmY2NDIwNjAwYThjYTliOC50dGZcIjsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-medium.ttf\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"client/dist/fonts/44b741a0a6a50232ff6420600a8ca9b8.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1tZWRpdW0udHRmLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vY2xpZW50L3NyYy9mb250cy9NYWl0cmVlL01haXRyZWUtbWVkaXVtLnR0Zj83OTRjIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiY2xpZW50L2Rpc3QvZm9udHMvNDRiNzQxYTBhNmE1MDIzMmZmNjQyMDYwMGE4Y2E5YjgudHRmXCI7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-medium.ttf\n");
 
 /***/ }),
 
@@ -211,7 +211,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/7bd187be9d50f1365ca1c353aa26bdd3.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1yZWd1bGFyLnR0Zi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2NsaWVudC9zcmMvZm9udHMvTWFpdHJlZS9NYWl0cmVlLXJlZ3VsYXIudHRmPzQwNDQiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyBcImZvbnRzLzdiZDE4N2JlOWQ1MGYxMzY1Y2ExYzM1M2FhMjZiZGQzLnR0ZlwiOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-regular.ttf\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"client/dist/fonts/7bd187be9d50f1365ca1c353aa26bdd3.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1yZWd1bGFyLnR0Zi5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2NsaWVudC9zcmMvZm9udHMvTWFpdHJlZS9NYWl0cmVlLXJlZ3VsYXIudHRmPzQwNDQiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCJjbGllbnQvZGlzdC9mb250cy83YmQxODdiZTlkNTBmMTM2NWNhMWMzNTNhYTI2YmRkMy50dGZcIjsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-regular.ttf\n");
 
 /***/ }),
 
@@ -223,7 +223,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/f5446a3b5ed00c96c9115ae6a295ebf2.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1zZW1pLWJvbGQudHRmLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vY2xpZW50L3NyYy9mb250cy9NYWl0cmVlL01haXRyZWUtc2VtaS1ib2xkLnR0Zj85ODFkIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IF9fd2VicGFja19wdWJsaWNfcGF0aF9fICsgXCJmb250cy9mNTQ0NmEzYjVlZDAwYzk2YzkxMTVhZTZhMjk1ZWJmMi50dGZcIjsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-semi-bold.ttf\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"client/dist/fonts/f5446a3b5ed00c96c9115ae6a295ebf2.ttf\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2ZvbnRzL01haXRyZWUvTWFpdHJlZS1zZW1pLWJvbGQudHRmLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vY2xpZW50L3NyYy9mb250cy9NYWl0cmVlL01haXRyZWUtc2VtaS1ib2xkLnR0Zj85ODFkIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiY2xpZW50L2Rpc3QvZm9udHMvZjU0NDZhM2I1ZWQwMGM5NmM5MTE1YWU2YTI5NWViZjIudHRmXCI7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./client/src/fonts/Maitree/Maitree-semi-bold.ttf\n");
 
 /***/ }),
 

@@ -72,6 +72,7 @@ module.exports = (env, argv) => {
                             loader: 'file-loader',
                             options: {
                                 outputPath: `fonts/`,
+                                publicPath: 'client/dist/fonts',
                             },
                         },
                     ],
