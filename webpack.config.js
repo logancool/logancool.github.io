@@ -7,13 +7,11 @@ const webpack = require('webpack');
 module.exports = (env, argv) => {
     const isDevelopment = argv.mode === 'development';
 
-    console.log(isDevelopment);
-
     return {
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
         output: {
-            publicPath: '/',
+            publicPath: '/client/dist',
             path: DIST_DIR,
             filename: 'bundle.js',
         },

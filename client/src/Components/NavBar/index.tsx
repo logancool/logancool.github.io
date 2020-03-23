@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../../globals';
+import styles from './styles.module';
 
 class NavBar extends Component {
     render() {
         return (
             <header>
                 <ul id="headerButtons">
-                    <li className="navButton">
+                    <li className={styles.container}>
                         <Link to="">Home</Link>
                     </li>
                 </ul>
