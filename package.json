@@ -5,10 +5,8 @@
     "main": "index.js",
     "scripts": {
         "deploy": "npm run build",
-        "dev": "webpack -d --watch",
-        "start": "webpack-dev-server --mode development --hot --open",
-        "build": "webpack -p",
-        "server-dev": "nodemon server/index.js"
+        "start": "webpack-dev-server -d --hot --watch",
+        "build": "webpack -p"
     },
     "repository": {
         "type": "git",

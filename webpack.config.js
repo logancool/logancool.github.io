@@ -7,10 +7,13 @@ const webpack = require('webpack');
 module.exports = (env, argv) => {
     const isDevelopment = argv.mode === 'development';
 
+    console.log(isDevelopment);
+
     return {
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
         output: {
+            publicPath: '/',
             path: DIST_DIR,
             filename: 'bundle.js',
         },
@@ -89,9 +92,6 @@ module.exports = (env, argv) => {
             ],
         },
         plugins: [
-            new webpack.DefinePlugin({
-                'process.env.NODE_ENV': JSON.stringify('production'),
-            }),
             new MiniCssExtractPlugin({
                 filename: isDevelopment ? '[name].css' : '[name].[hash].css',
                 chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css',
