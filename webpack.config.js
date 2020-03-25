@@ -1,8 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const SRC_DIR = path.join(__dirname, '/client/src');
-const DIST_DIR = path.join(__dirname, '/client/dist');
-const webpack = require('webpack');
+const SRC_DIR = path.join(__dirname, '/src');
 
 module.exports = (env, argv) => {
     const isDevelopment = argv.mode === 'development';
@@ -11,9 +9,9 @@ module.exports = (env, argv) => {
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
         output: {
-            publicPath: '/client/dist',
-            path: DIST_DIR,
-            filename: 'bundle.js',
+            filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
+            path: path.resolve('./dist'),
+            publicPath: 'dist',
         },
         resolve: {
             extensions: ['.js', '.json', '.scss', '.ts', '.tsx'],
@@ -72,7 +70,7 @@ module.exports = (env, argv) => {
                             loader: 'file-loader',
                             options: {
                                 outputPath: `fonts/`,
-                                publicPath: 'client/dist/fonts',
+                                publicPath: 'dist/fonts',
                             },
                         },
                     ],
