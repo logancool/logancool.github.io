@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SRC_DIR = path.join(__dirname, '/src');
 
 module.exports = (env, argv) => {
@@ -8,6 +9,9 @@ module.exports = (env, argv) => {
     return {
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
+        devServer: {
+            contentBase: './dist',
+        },
         output: {
             filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
             path: path.resolve('./dist'),
@@ -91,6 +95,10 @@ module.exports = (env, argv) => {
             new MiniCssExtractPlugin({
                 filename: isDevelopment ? 'assets/[name].css' : 'assets/[name].[hash].css',
                 chunkFilename: isDevelopment ? 'assets/[id].css' : 'assets/[id].[hash].css',
+            }),
+            new HtmlWebpackPlugin({
+                title: 'My Website',
+                template: './src/utils/root.html',
             }),
         ],
     };
