@@ -91,8 +91,8 @@ module.exports = (env, argv) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-                chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css',
+                filename: isDevelopment ? 'assets/[name].css' : 'assets/[name].[hash].css',
+                chunkFilename: isDevelopment ? 'assets/[id].css' : 'assets/[id].[hash].css',
             }),
         ],
     };
