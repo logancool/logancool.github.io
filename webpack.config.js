@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
         output: {
             filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
             path: path.resolve('./dist'),
-            publicPath: 'dist',
+            publicPath: isDevelopment ? 'dist' : '/',
         },
         resolve: {
             extensions: ['.js', '.json', '.scss', '.ts', '.tsx'],
