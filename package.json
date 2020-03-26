@@ -10,7 +10,7 @@
         "run:prod": "webpack-dev-server -p",
         "start:prod": "yarn build:prod && yarn run:prod",
         "start": "yarn build:dev && yarn run:dev",
-        "deploy": "yarn build:prod && gh-pages -d dist"
+        "deploy": "yarn build:prod && gh-pages --branch master --dist dist"
     },
     "repository": {
         "type": "git",
