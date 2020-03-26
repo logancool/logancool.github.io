@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SRC_DIR = path.join(__dirname, '/src');
 
@@ -11,12 +12,10 @@ module.exports = (env, argv) => {
         entry: `${SRC_DIR}/index.tsx`,
         devServer: {
             hot: true,
-            contentBase: './dist',
         },
         output: {
             filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
             path: path.resolve('./dist'),
-            publicPath: isDevelopment ? 'dist' : '/',
         },
         resolve: {
             extensions: ['.js', '.json', '.scss', '.ts', '.tsx'],
@@ -92,13 +91,19 @@ module.exports = (env, argv) => {
             ],
         },
         plugins: [
-            new MiniCssExtractPlugin({
-                filename: '[name].[hash].css',
-                chunkFilename: '[id].[hash].css',
+            new CleanWebpackPlugin({
+                cleanStaleWebpackAssets: false,
+                protectWebpackAssets: true,
+
+                verbose: true,
             }),
             new HtmlWebpackPlugin({
                 title: 'My Website',
                 template: './src/utils/root.html',
+            }),
+            new MiniCssExtractPlugin({
+                filename: '[name].[hash].css',
+                chunkFilename: '[id].[hash].css',
             }),
         ],
     };
