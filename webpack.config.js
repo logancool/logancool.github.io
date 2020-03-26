@@ -10,6 +10,7 @@ module.exports = (env, argv) => {
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
         devServer: {
+            hot: true,
             contentBase: './dist',
         },
         output: {
@@ -74,7 +75,6 @@ module.exports = (env, argv) => {
                             loader: 'file-loader',
                             options: {
                                 outputPath: `fonts/`,
-                                publicPath: 'dist/fonts',
                             },
                         },
                     ],
@@ -93,8 +93,8 @@ module.exports = (env, argv) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: isDevelopment ? 'assets/[name].css' : 'assets/[name].[hash].css',
-                chunkFilename: isDevelopment ? 'assets/[id].css' : 'assets/[id].[hash].css',
+                filename: '[name].[hash].css',
+                chunkFilename: '[id].[hash].css',
             }),
             new HtmlWebpackPlugin({
                 title: 'My Website',
