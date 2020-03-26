@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './styles.module';
+import './styles.module.scss';
 
 class NavBar extends Component {
     render() {
         return (
             <header>
                 <ul id="headerButtons">
-                    <li className={styles.container}>
+                    <li styleName="container">
                         <Link to="">Homer Simpson</Link>
                     </li>
                 </ul>
