@@ -43,15 +43,15 @@ module.exports = (env, argv) => {
                     exclude: /node_modules/,
                     use: [
                         {
-                            // After all CSS loaders we use plugin to do his work.
-                            // It gets all transformed CSS and extracts it into separate
-                            // single bundled file
                             loader: isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                         },
                         {
                             loader: 'css-loader',
                             options: {
-                                modules: true,
+                                importLoaders: 1,
+                                modules: {
+                                    localIdentName: "[path]___[name]__[local]___[hash:base64:5]"
+                                },
                                 sourceMap: isDevelopment,
                             },
                         },
