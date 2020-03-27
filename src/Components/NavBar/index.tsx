@@ -8,7 +8,13 @@ class NavBar extends Component {
             <header>
                 <ul id="headerButtons">
                     <li styleName="container">
-                        <Link to="">Homer Simpson</Link>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/another-page">Another Page</Link>
+                    </li>
+                    <li>
+                        <Link to="/a-third-page">A Third Page</Link>
                     </li>
                 </ul>
             </header>
