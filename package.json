@@ -10,6 +10,9 @@
         "run:prod": "webpack-dev-server -p",
         "start:prod": "yarn build:prod && yarn run:prod",
         "start": "yarn build:dev && yarn run:dev",
+        "lint:js": "eslint --cache .",
+        "lint:style": "stylelint **/**.scss",
+        "lint": "yarn lint:js && yarn lint:style",
         "deploy": "yarn build:prod && gh-pages --branch master --dist dist"
     },
     "repository": {
@@ -61,6 +64,8 @@
         "sass": "^1.26.3",
         "sass-loader": "^8.0.2",
         "style-loader": "^1.1.3",
+        "stylelint": "^13.2.1",
+        "stylelint-config-prettier": "^8.0.1",
         "webpack-cli": "^3.3.11",
         "webpack-dev-server": "^3.10.3"
     }
