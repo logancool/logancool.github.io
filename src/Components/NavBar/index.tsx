@@ -5,18 +5,24 @@ import './styles.module.scss';
 class NavBar extends Component {
     render() {
         return (
-            <header>
-                <ul id="headerButtons">
-                    <li styleName="container">
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/another-page">Another Page</Link>
-                    </li>
-                    <li>
-                        <Link to="/a-third-page">A Third Page</Link>
-                    </li>
-                </ul>
+            <header styleName='header'>
+                <div styleName="container">
+                    <input type="checkbox" styleName="toggle" />
+                    <div styleName="hamburger-menu">
+                        <div styleName="hamburger-menu-line" />
+                    </div>
+                    <ul styleName="items">
+                        <li styleName="item">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li styleName="item">
+                            <Link to="/another-page">Another Page</Link>
+                        </li>
+                        <li styleName="item">
+                            <Link to="/a-third-page">A Third Page</Link>
+                        </li>
+                    </ul>
+                </div>
             </header>
         );
     }

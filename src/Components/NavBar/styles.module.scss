@@ -1,5 +1,89 @@
 @import '../../style/globals';
 
+.header {
+    min-height: 100px;
+}
+
 .container {
-    background-color: #ff9999;
+    position: fixed;
+    padding: 1rem 1rem 1.5rem;
+    margin: 0 0 1rem;
+
+    @include at-ipad {
+        position: relative;
+        background-color: #b3b0ff;
+    }
+}
+
+.items {
+    display: none;
+
+    @include at-ipad {
+        list-style-type: none; // hide the dots;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.item {
+    background-color: #b5d6fa;
+    box-shadow: 5px 10px #888888;
+    a {
+        padding: 0 1rem;
+        text-decoration: none;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.hamburger-menu {
+    position: absolute;
+    padding: 1rem;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: aquamarine;
+
+    @include center-flex;
+    @include at-ipad {
+        display: none;
+    }
+}
+
+.hamburger-menu-line {
+    position: relative;
+    @include center-flex;
+    @include line(white);
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: -0.625rem;
+        @include line(white);
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0.625rem;
+        @include line(white);
+    }
+}
+
+.toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    &:checked + .hamburger-menu {
+        transform: rotate(90deg);
+    }
 }

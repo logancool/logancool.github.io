@@ -1,0 +1,37 @@
+// Simple Media Queries
+@mixin at($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@mixin at-iphone {
+    @include at(425px) {
+        @content;
+    }
+}
+
+@mixin at-ipad {
+    @include at(768px) {
+        @content;
+    }
+}
+
+@mixin at-desktop {
+    @include at(1024px) {
+    }
+}
+
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin line($line-color) {
+    width: 100%;
+    height: 2px;
+    background-color: $line-color;
+}
