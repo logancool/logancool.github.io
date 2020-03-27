@@ -13,7 +13,8 @@
         "lint:js": "eslint --cache .",
         "lint:style": "stylelint **/**.scss",
         "lint": "yarn lint:js && yarn lint:style",
-        "deploy": "yarn build:prod && gh-pages --branch master --dist dist"
+        "deploy": "yarn build:prod && gh-pages --branch master --dist dist",
+        "publush": "yarn deploy"
     },
     "repository": {
         "type": "git",
