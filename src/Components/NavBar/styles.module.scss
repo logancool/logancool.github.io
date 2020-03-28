@@ -1,17 +1,25 @@
 @import '../../style/globals';
 
+$nav-height: 3rem;
+$primary-color: #b3b0ff;
+$secondary-color: #b5d6fa;
+$hamburger-menu-size: 2rem;
+
 .header {
-    min-height: 100px;
+    min-height: $nav-height;
 }
 
 .container {
     position: fixed;
-    padding: 1rem 1rem 1.5rem;
-    margin: 0 0 1rem;
+    background-color: $secondary-color;
+    width: 100%;
+    height: $nav-height;
 
     @include at-ipad {
         position: relative;
-        background-color: #b3b0ff;
+        padding: 1rem 1rem 1.5rem;
+        margin: 0 0 1rem;
+        background-color: $primary-color;
     }
 }
 
@@ -26,7 +34,7 @@
 }
 
 .item {
-    background-color: #b5d6fa;
+    background-color: $secondary-color;
     box-shadow: 5px 10px #888888;
     a {
         padding: 0 1rem;
@@ -39,13 +47,12 @@
 }
 .hamburger-menu {
     position: absolute;
-    padding: 1rem;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    width: 2rem;
-    height: 2rem;
-    background-color: aquamarine;
+    top: calc(#{$nav-height - $hamburger-menu-size}/ 2);
+    left: calc(#{$nav-height - $hamburger-menu-size}/ 2);
+    width: $hamburger-menu-size;
+    height: $hamburger-menu-size;
+    transition: all 0.2s ease;
 
     @include center-flex;
     @include at-ipad {
@@ -56,34 +63,41 @@
 .hamburger-menu-line {
     position: relative;
     @include center-flex;
-    @include line(white);
+    @include line(black);
 
     &:before {
         position: absolute;
         content: '';
         top: -0.625rem;
-        @include line(white);
+        @include line(black);
     }
 
     &:after {
         position: absolute;
         content: '';
         top: 0.625rem;
-        @include line(white);
+        @include line(black);
     }
 }
 
 .toggle {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
     cursor: pointer;
     opacity: 0;
     z-index: 1;
-    width: 1.5rem;
-    height: 1.5rem;
+    top: calc(#{$nav-height - $hamburger-menu-size}/ 2);
+    left: calc(#{$nav-height - $hamburger-menu-size}/ 2);
+    width: $hamburger-menu-size;
+    height: $hamburger-menu-size;
 
     &:checked + .hamburger-menu {
-        transform: rotate(90deg);
+        transform: rotate(135deg);
+
+        // create x
+        & .hamburger-menu-line:before,
+        & .hamburger-menu-line:after {
+            top: 0;
+            transform: rotate(90deg);
+        }
     }
 }

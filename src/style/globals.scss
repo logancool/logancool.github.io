@@ -11,7 +11,12 @@ $font-semi-bold: 'Maitree Semi Bold', sans-serif;
 $font-light: 'Maitree Light', sans-serif;
 $font-extra-light: 'Maitree Extra Light', sans-serif;
 
+input {
+    margin: 0;
+}
+
 body {
+    margin: 0;
     font-family: $font-regular;
 }
 
