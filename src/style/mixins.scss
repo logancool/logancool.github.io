@@ -35,3 +35,14 @@
     height: 2px;
     background-color: $line-color;
 }
+
+//layout
+
+@mixin page-layout {
+    padding: 2rem;
+    @include at-iphone {
+    }
+
+    @include at-ipad {
+    }
+}

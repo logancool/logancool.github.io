@@ -5,7 +5,7 @@ import './styles.module.scss';
 class NavBar extends Component {
     render() {
         return (
-            <header styleName='header'>
+            <header styleName="header">
                 <div styleName="container">
                     <input type="checkbox" styleName="toggle" />
                     <div styleName="hamburger-menu">
@@ -13,13 +13,13 @@ class NavBar extends Component {
                     </div>
                     <ul styleName="items">
                         <li styleName="item">
-                            <Link to="/">Home</Link>
+                            <Link to="/">Me</Link>
                         </li>
                         <li styleName="item">
-                            <Link to="/another-page">Another Page</Link>
+                            <Link to="/resume">Resume</Link>
                         </li>
                         <li styleName="item">
-                            <Link to="/a-third-page">A Third Page</Link>
+                            <Link to="/projects">Projects</Link>
                         </li>
                     </ul>
                 </div>

@@ -11,6 +11,7 @@ module.exports = (env, argv) => {
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
         devServer: {
+            historyApiFallback: true,
             hot: true,
         },
         output: {
@@ -50,7 +51,7 @@ module.exports = (env, argv) => {
                             options: {
                                 importLoaders: 1,
                                 modules: {
-                                    localIdentName: "[path]___[name]__[local]___[hash:base64:5]"
+                                    localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
                                 },
                                 sourceMap: isDevelopment,
                             },
@@ -81,7 +82,7 @@ module.exports = (env, argv) => {
                 {
                     test: /\.js?/,
                     include: SRC_DIR,
-                    use: ['source-map-loader'],
+                    use: ['babel-loader'],
                     enforce: 'pre',
                 },
                 {
