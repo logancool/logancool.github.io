@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../globals';
+import './styles.module.scss';
 
 class Footer extends Component {
     render() {
         return (
-            <footer>
+            <footer styleName="page">
                 <div>Footer component</div>
             </footer>
         );

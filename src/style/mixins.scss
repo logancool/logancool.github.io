@@ -39,10 +39,13 @@
 //layout
 
 @mixin page-layout {
+    margin: 0 auto;
     padding: 2rem;
     @include at-iphone {
+        max-width: 768px;
     }
 
     @include at-ipad {
+        box-shadow: 9px 9px 0 12px #888888;
     }
 }
