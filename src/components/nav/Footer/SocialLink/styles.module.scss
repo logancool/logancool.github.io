@@ -1,0 +1,17 @@
+@import '../../../../style/mixins';
+
+.social-link {
+    fill: white;
+    width: $size-footer-icon;
+    height: $size-footer-icon;
+
+    svg {
+        width: $size-footer-icon;
+        height: $size-footer-icon;
+    }
+
+    padding: 0.5rem;
+    cursor: pointer;
+
+    @include buttons-hover;
+}

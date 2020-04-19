@@ -1,0 +1,9 @@
+@import '../style/colors';
+@import '../style/layout';
+
+.page {
+    display: flex;
+    align-items: center;
+    background-color: $color-page;
+    min-height: $min-height-page;
+}

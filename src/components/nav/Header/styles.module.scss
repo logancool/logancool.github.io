@@ -1,22 +1,18 @@
-@import '../../style/globals';
+@import '../../../style/mixins';
 
-$nav-height: 3rem;
 $hamburger-menu-size: 2rem;
 
 .header {
-    min-height: $nav-height;
-    background-color: $color-primary;
+    min-height: $height-header;
 }
 
 .container {
     position: fixed;
-    height: $nav-height;
+    width: 100%;
+    background-color: $color-primary;
 
     @include at-ipad {
-        position: relative;
-        padding: 1rem 1rem 1.5rem;
-        margin: 0 auto #{$space-below};
-        max-width: $width-ipad;
+        margin: 0 auto;
     }
 }
 
@@ -44,8 +40,8 @@ $hamburger-menu-size: 2rem;
 .hamburger-menu {
     position: absolute;
     cursor: pointer;
-    top: calc(#{$nav-height - $hamburger-menu-size}/ 2);
-    left: calc(#{$nav-height - $hamburger-menu-size}/ 2);
+    top: calc(#{$height-header - $hamburger-menu-size}/ 2);
+    left: calc(#{$height-header - $hamburger-menu-size}/ 2);
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
     transition: all 0.2s ease;
@@ -81,8 +77,8 @@ $hamburger-menu-size: 2rem;
     cursor: pointer;
     opacity: 0;
     z-index: 1;
-    top: calc(#{$nav-height - $hamburger-menu-size}/ 2);
-    left: calc(#{$nav-height - $hamburger-menu-size}/ 2);
+    top: calc(#{$height-header - $hamburger-menu-size}/ 2);
+    left: calc(#{$height-header - $hamburger-menu-size}/ 2);
     width: $hamburger-menu-size;
     height: $hamburger-menu-size;
 

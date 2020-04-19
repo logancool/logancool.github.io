@@ -1,0 +1,13 @@
+@import '../../../style/mixins';
+
+.page-content {
+    background-color: white;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    @include page-box;
+
+    @include at-iphone {
+        max-width: $width-ipad;
+    }
+}

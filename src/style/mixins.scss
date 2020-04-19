@@ -1,10 +1,5 @@
-// variables
-$width-iphone: 425px;
-$width-ipad: 768px;
-$width-desktop: 1024px;
-
-// component spacing
-$space-below: 2rem;
+@import '../style/colors';
+@import '../style/layout';
 
 // media queries
 @mixin at($width) {
@@ -43,20 +38,9 @@ $space-below: 2rem;
 }
 
 //layout
-
 @mixin page-box {
     @include at-ipad {
         border: 2px solid $color-border;
-    }
-}
-
-@mixin page-layout {
-    margin: 0 auto calc(1.3125rem + #{$space-below}); //accommodate box-shadow
-    padding: 2rem;
-    @include page-box;
-
-    @include at-iphone {
-        max-width: $width-ipad;
     }
 }
 

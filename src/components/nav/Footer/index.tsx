@@ -6,10 +6,12 @@ import './styles.module.scss';
 
 const Footer = () => (
     <footer styleName="footer">
-        <div styleName="icons">
-            <Twitter />
-            <LinkedIn />
-            <Instagram />
+        <div styleName="container">
+            <div styleName="icons">
+                <Twitter />
+                <LinkedIn />
+                <Instagram />
+            </div>
         </div>
     </footer>
 );

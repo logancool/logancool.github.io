@@ -1,0 +1,15 @@
+@import '../../../style/globals';
+
+.footer {
+    min-height: $height-footer;
+}
+.container {
+    position: fixed;
+    background-color: $color-secondary;
+    width: 100%;
+    bottom: 0;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+}

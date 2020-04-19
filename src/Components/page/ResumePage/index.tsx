@@ -1,9 +1,10 @@
 import React, { Fragment, Component } from 'react';
 import data from './data';
+import PageContent from '../../layout/PageContent';
 import './styles.module.scss';
 
 const ResumePage = () => (
-    <div styleName="page">
+    <PageContent>
         <div className="columns">
             <div className="headline">
                 <div className="headline-name">{data.headline.name}</div>
@@ -27,7 +28,7 @@ const ResumePage = () => (
                 ))}
             </div>
         </div>
-    </div>
+    </PageContent>
 );
 
 export default ResumePage;

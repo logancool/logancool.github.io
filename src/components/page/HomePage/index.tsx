@@ -1,8 +1,9 @@
 import React from 'react';
+import PageContent from '../../layout/PageContent';
 import './styles.module.scss';
 
 const HomePage = () => (
-    <div styleName="page">
+    <PageContent>
         <p>
             Hi there 👋, Logan here. Welcome to paradise!🌴 If you have ever met me, I consider myself as a very
             positive person who loves music, travelling, and being outside. I moved to the bay area about 5 years ago
@@ -30,6 +31,6 @@ const HomePage = () => (
             directly, to help improve internal webapp tooling. After HTML began dominating the industry, I worked mostly
             with CSS and JavaScript frameworks such as&nbsp;Three.js.
         </p>
-    </div>
+    </PageContent>
 );
 export default HomePage;

@@ -1,0 +1,18 @@
+//sizes
+$size-footer-icon: 2rem;
+
+//padding
+$padding-button: 0.5rem;
+
+//widths
+$width-iphone: 425px;
+$width-ipad: 768px;
+$width-desktop: 1024px;
+
+//heights
+$height-header: 3.625rem; //TODO: fix
+$height-footer: calc(#{$padding-button}* 2 + #{$size-footer-icon});
+$min-height-page: calc(100vh - (#{$height-header} + #{$height-footer})); // if
+
+//spacing
+$space-below: 2rem;
