@@ -1,5 +1,7 @@
 @import '../../style/globals';
 
 .footer {
+    padding: 2rem;
     @include page-buttons;
+    background-color: $color-secondary;
 }

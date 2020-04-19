@@ -3,6 +3,9 @@ $width-iphone: 425px;
 $width-ipad: 768px;
 $width-desktop: 1024px;
 
+// component spacing
+$space-below: 2rem;
+
 // media queries
 @mixin at($width) {
     @media only screen and (min-width: $width) {
@@ -48,7 +51,7 @@ $width-desktop: 1024px;
 }
 
 @mixin page-layout {
-    margin: 0 auto 1.3125rem;
+    margin: 0 auto calc(1.3125rem + #{$space-below}); //accommodate box-shadow
     padding: 2rem;
     @include page-box;
 

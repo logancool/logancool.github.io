@@ -5,19 +5,18 @@ $hamburger-menu-size: 2rem;
 
 .header {
     min-height: $nav-height;
+    background-color: $color-primary;
 }
 
 .container {
     position: fixed;
-    background-color: $secondary-color;
-    width: 100%;
     height: $nav-height;
 
     @include at-ipad {
         position: relative;
         padding: 1rem 1rem 1.5rem;
-        margin: 0 0 1rem;
-        background-color: $primary-color;
+        margin: 0 auto #{$space-below};
+        max-width: $width-ipad;
     }
 }
 
@@ -32,7 +31,7 @@ $hamburger-menu-size: 2rem;
 }
 
 .item {
-    background-color: $secondary-color;
+    background-color: $color-secondary;
     box-shadow: 5px 10px #888888;
     a {
         padding: 0 1rem;
