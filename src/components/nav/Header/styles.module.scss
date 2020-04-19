@@ -2,14 +2,15 @@
 
 $hamburger-menu-size: 2rem;
 
-.header {
+.placeholder {
     min-height: $height-header;
 }
 
-.container {
+.header {
     position: fixed;
     width: 100%;
     background-color: $color-primary;
+    border-bottom: 1px solid $color-border;
 
     @include at-ipad {
         margin: 0 auto;

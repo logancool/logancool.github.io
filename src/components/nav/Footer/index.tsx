@@ -5,8 +5,8 @@ import Instagram from './icons/Instagram';
 import './styles.module.scss';
 
 const Footer = () => (
-    <footer styleName="footer">
-        <div styleName="container">
+    <footer styleName="placeholder">
+        <div styleName="footer">
             <div styleName="icons">
                 <Twitter />
                 <LinkedIn />

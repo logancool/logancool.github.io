@@ -1,13 +1,14 @@
 @import '../../../style/globals';
 
-.footer {
+.placeholder {
     min-height: $height-footer;
 }
-.container {
+.footer {
     position: fixed;
     background-color: $color-secondary;
     width: 100%;
     bottom: 0;
+    border-top: 1px solid $color-border;
 }
 .icons {
     display: flex;
