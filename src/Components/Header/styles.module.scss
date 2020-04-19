@@ -38,9 +38,8 @@ $hamburger-menu-size: 2rem;
         text-decoration: none;
     }
 
-    &:hover {
-        opacity: 0.7;
-    }
+    @include page-button;
+    @include buttons-hover;
 }
 .hamburger-menu {
     position: absolute;
@@ -60,20 +59,20 @@ $hamburger-menu-size: 2rem;
 .hamburger-menu-line {
     position: relative;
     @include center-flex;
-    @include line(black);
+    @include line();
 
     &:before {
         position: absolute;
         content: '';
         top: -0.625rem;
-        @include line(black);
+        @include line();
     }
 
     &:after {
         position: absolute;
         content: '';
         top: 0.625rem;
-        @include line(black);
+        @include line();
     }
 }
 

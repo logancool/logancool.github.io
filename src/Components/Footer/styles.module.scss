@@ -2,6 +2,10 @@
 
 .footer {
     padding: 2rem;
-    @include page-buttons;
     background-color: $color-secondary;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
 }
