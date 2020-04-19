@@ -1,0 +1,73 @@
+// Name of font should match folder and filenames (eg. foo -> foo/foo-regular.ttf)
+// Font should be .ttf format and include
+// $font-regular
+// $font-medium
+// $font-semibold
+// $font-bold
+// $font-extra-light
+// $font-light
+
+$font: 'Maitree';
+
+//
+//
+// only $font should be changed in this file
+// do not alter template below
+//
+
+@mixin webfonts {
+    $font-regular-path: './fonts/#{$font}/#{$font}-regular.ttf' !default;
+    $font-medium-path: './fonts/#{$font}/#{$font}-medium.ttf' !default;
+    $font-semi-bold-path: './fonts/#{$font}/#{$font}-semi-bold.ttf' !default;
+    $font-bold-path: './fonts/#{$font}/#{$font}-bold.ttf' !default;
+    $font-extra-light-path: './fonts/#{$font}/#{$font}-extra-light.ttf' !default;
+    $font-light-path: './fonts/#{$font}/#{$font}-light.ttf' !default;
+
+    @font-face {
+        font-family: '#{$font} Regular';
+        src: url($font-regular-path) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: '#{$font} Medium';
+        src: url($font-medium-path) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: '#{$font} Bold';
+        src: url($font-bold-path) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: '#{$font} Semi Bold';
+        src: url($font-semi-bold-path) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: '#{$font} Light';
+        src: url($font-light-path) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: '#{$font} Extra Light';
+        src: url($font-extra-light-path) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}

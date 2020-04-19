@@ -1,26 +1,29 @@
-// Simple Media Queries
+// variables
+$width-iphone: 425px;
+$width-ipad: 768px;
+$width-desktop: 1024px;
+
+// media queries
 @mixin at($width) {
     @media only screen and (min-width: $width) {
         @content;
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
-
 @mixin at-iphone {
-    @include at(425px) {
+    @include at($width-iphone) {
         @content;
     }
 }
 
 @mixin at-ipad {
-    @include at(768px) {
+    @include at($width-ipad) {
         @content;
     }
 }
 
 @mixin at-desktop {
-    @include at(1024px) {
+    @include at($width-desktop) {
     }
 }
 
@@ -38,14 +41,23 @@
 
 //layout
 
-@mixin page-layout {
-    margin: 0 auto;
-    padding: 2rem;
-    @include at-iphone {
-        max-width: 768px;
-    }
-
+@mixin page-box {
     @include at-ipad {
         box-shadow: 9px 9px 0 12px #888888;
     }
+}
+
+@mixin page-layout {
+    margin: 0 auto 1.3125rem;
+    padding: 2rem;
+    @include page-box;
+
+    @include at-iphone {
+        max-width: $width-ipad;
+    }
+}
+
+// buttons
+
+@mixin page-buttons {
 }
