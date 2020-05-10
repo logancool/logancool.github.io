@@ -5,10 +5,10 @@
 }
 .footer {
     position: fixed;
-    background-color: $color-secondary;
+    background-color: $color-primary;
     width: 100%;
     bottom: 0;
-    border-top: 1px solid $color-border;
+    border-top: $border;
 }
 .icons {
     display: flex;

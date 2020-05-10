@@ -10,8 +10,11 @@
         height: $size-footer-icon;
     }
 
-    padding: 0.5rem;
     cursor: pointer;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border-right: $border;
 
-    @include buttons-hover;
+    &:hover {
+        padding-right: 2rem;
+    }
 }

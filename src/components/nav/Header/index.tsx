@@ -1,27 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.module.scss';
 
-const Header = () => (
-    <header styleName="placeholder">
-        <div styleName="header">
-            <input type="checkbox" styleName="toggle" />
-            <div styleName="hamburger-menu">
-                <div styleName="hamburger-menu-line" />
+const Header = () => {
+    const pages = ['me', 'resume', 'projects'];
+
+    const [activePage, setActive] = useState('me');
+
+    return (
+        <header styleName="placeholder">
+            <div styleName="header">
+                <ul styleName="items">
+                    {pages.map(page => (
+                        <li key={page} styleName={`item ${activePage === page ? 'active' : ''}`}>
+                            <Link
+                                styleName="link"
+                                onClick={() => {
+                                    setActive(page);
+                                }}
+                                to={page === 'me' ? '/' : `/${page}`}
+                            >
+                                {page}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
-            <ul styleName="items">
-                <li styleName="item">
-                    <Link to="/">Me</Link>
-                </li>
-                <li styleName="item">
-                    <Link to="/resume">Resume</Link>
-                </li>
-                <li styleName="item">
-                    <Link to="/projects">Projects</Link>
-                </li>
-            </ul>
-        </div>
-    </header>
-);
+        </header>
+    );
+};
 
 export default Header;

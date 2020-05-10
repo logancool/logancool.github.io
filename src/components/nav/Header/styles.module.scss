@@ -1,6 +1,5 @@
 @import '../../../style/mixins';
-
-$hamburger-menu-size: 2rem;
+@import '../../../style/design';
 
 .placeholder {
     min-height: $height-header;
@@ -10,7 +9,7 @@ $hamburger-menu-size: 2rem;
     position: fixed;
     width: 100%;
     background-color: $color-primary;
-    border-bottom: 1px solid $color-border;
+    border-bottom: $border;
 
     @include at-ipad {
         margin: 0 auto;
@@ -18,79 +17,27 @@ $hamburger-menu-size: 2rem;
 }
 
 .items {
-    display: none;
+    @include reset-list;
 
-    @include at-ipad {
-        list-style-type: none; // hide the dots;
-        display: flex;
-        justify-content: space-around;
-    }
+    display: flex;
+    justify-content: space-around;
 }
 
 .item {
+    width: 100%;
+    padding: 1rem;
+    border-right: $border;
+}
+
+.active {
     background-color: $color-secondary;
-    box-shadow: 5px 10px #888888;
-    a {
-        padding: 0 1rem;
-        text-decoration: none;
-    }
-
-    @include page-button;
-    @include buttons-hover;
-}
-.hamburger-menu {
-    position: absolute;
-    cursor: pointer;
-    top: calc(#{$height-header - $hamburger-menu-size}/ 2);
-    left: calc(#{$height-header - $hamburger-menu-size}/ 2);
-    width: $hamburger-menu-size;
-    height: $hamburger-menu-size;
-    transition: all 0.2s ease;
-
-    @include center-flex;
-    @include at-ipad {
-        display: none;
-    }
 }
 
-.hamburger-menu-line {
-    position: relative;
-    @include center-flex;
-    @include line();
+.link {
+    @include reset-link;
 
-    &:before {
-        position: absolute;
-        content: '';
-        top: -0.625rem;
-        @include line();
-    }
+    display: flex;
+    justify-content: flex-end;
 
-    &:after {
-        position: absolute;
-        content: '';
-        top: 0.625rem;
-        @include line();
-    }
-}
-
-.toggle {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 1;
-    top: calc(#{$height-header - $hamburger-menu-size}/ 2);
-    left: calc(#{$height-header - $hamburger-menu-size}/ 2);
-    width: $hamburger-menu-size;
-    height: $hamburger-menu-size;
-
-    &:checked + .hamburger-menu {
-        transform: rotate(135deg);
-
-        // create x
-        & .hamburger-menu-line:before,
-        & .hamburger-menu-line:after {
-            top: 0;
-            transform: rotate(90deg);
-        }
-    }
+    padding-right: 1rem;
 }
