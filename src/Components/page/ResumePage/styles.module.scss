@@ -1,3 +1,6 @@
+@import '../../../style/layout';
+@import '../../../style/mixins';
+
 .resume {
     //TODO: add styles
 }
@@ -6,9 +9,11 @@
 }
 
 .section-title {
+    margin-bottom: 0;
 }
 
 .section-date {
+    @include reset-h5;
 }
 
 .columns {
@@ -24,6 +29,7 @@
 }
 
 .skills {
+    font-size: 0.875rem;
 }
 
 .skill {

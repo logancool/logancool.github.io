@@ -9,7 +9,6 @@
     position: fixed;
     width: 100%;
     background-color: $color-primary;
-    border-bottom: $border;
 
     @include at-ipad {
         margin: 0 auto;
@@ -26,12 +25,12 @@
 .item {
     width: 50%;
     padding: 1rem;
-    border-right: $border;
+
     box-sizing: border-box;
     transition: $transition;
 
     &:hover {
-        background-color: rgba($color-secondary, 0.5);
+        background-color: $color-hover-secondary;
         transition: $transition;
         width: 100%;
     }
@@ -41,6 +40,10 @@
     background-color: $color-secondary;
     transition: $transition;
     width: 100%;
+
+    &:hover {
+        background-color: $color-secondary; // do not fade hover on active page
+    }
 }
 
 .link {
