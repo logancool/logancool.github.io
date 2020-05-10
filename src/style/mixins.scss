@@ -7,6 +7,13 @@
     cursor: pointer;
 }
 
+@mixin reset-svg {
+    svg {
+        width: inherit;
+        height: inherit;
+    }
+}
+
 @mixin reset-list {
     list-style-type: none; // hide the dots
     padding-inline-start: 0; //remove indent padding

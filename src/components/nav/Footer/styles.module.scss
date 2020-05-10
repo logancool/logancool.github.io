@@ -5,12 +5,12 @@
 }
 .footer {
     position: fixed;
-    background-color: $color-primary;
     width: 100%;
     bottom: 0;
-    border-top: $border;
 }
+
 .icons {
     display: flex;
+    padding: 0 30%;
     justify-content: space-around;
 }

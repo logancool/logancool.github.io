@@ -1,20 +1,17 @@
 @import '../../../../style/mixins';
 
 .social-link {
-    fill: white;
+    @include reset-svg;
+
+    fill: $color-primary;
+    cursor: pointer;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+
     width: $size-footer-icon;
     height: $size-footer-icon;
 
-    svg {
-        width: $size-footer-icon;
-        height: $size-footer-icon;
-    }
-
-    cursor: pointer;
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
-    border-right: $border;
-
     &:hover {
-        padding-right: 2rem;
+        fill: $color-secondary;
+        transition: $transition;
     }
 }
