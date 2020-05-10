@@ -1,0 +1,17 @@
+// Name of font should match folder and filenames (eg. foo -> foo/foo-regular.ttf)
+// Font should be .ttf format and include all font faces defined in fonts/webfonts.scss
+
+$font: 'Maitree';
+
+//
+//
+// only $font should be changed in this file
+// do not alter template below
+//
+
+$font-regular: '#{$font} Regular', sans-serif;
+$font-medium: '#{$font} Medium', sans-serif;
+$font-bold: '#{$font} Bold', sans-serif;
+$font-semi-bold: '#{$font} Semi Bold', sans-serif;
+$font-light: '#{$font} Light', sans-serif;
+$font-extra-light: '#{$font} Extra Light', sans-serif;

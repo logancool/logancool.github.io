@@ -1,5 +1,9 @@
 @import '../style/colors';
 @import '../style/layout';
+@import '../style/fonts';
+
+//fonts
+$font-header: $size-font-header $font-bold;
 
 //borders
 $border: $width-border solid $color-border;

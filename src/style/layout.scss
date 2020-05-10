@@ -1,7 +1,9 @@
 //sizes
 $size-footer-icon: 2.5rem;
+
 //font-size
 $size-font-primary: 1rem;
+$size-font-header: 1.25rem;
 $size-font-li: 1rem;
 
 //padding
@@ -14,7 +16,7 @@ $width-desktop: 1024px;
 $width-border: 2px;
 
 //heights
-$height-header: 3.625rem; //TODO: fix
+$height-header: 4.0625rem;
 $height-footer: calc(#{$padding-button}* 2 + #{$size-footer-icon});
 $min-height-page: calc(100vh - (#{$height-header} + #{$height-footer})); // if
 

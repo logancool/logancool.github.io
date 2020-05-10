@@ -1,19 +1,6 @@
-// Name of font should match folder and filenames (eg. foo -> foo/foo-regular.ttf)
-// Font should be .ttf format and include
-// $font-regular
-// $font-medium
-// $font-semibold
-// $font-bold
-// $font-extra-light
-// $font-light
-
-$font: 'Maitree';
-
-//
-//
-// only $font should be changed in this file
-// do not alter template below
-//
+// If changing font only change $font-name in ../fonts and ensure all fonts defined
+// match what font faces defined in below
+@import '../fonts';
 
 @mixin webfonts {
     $font-regular-path: './fonts/#{$font}/#{$font}-regular.ttf' !default;

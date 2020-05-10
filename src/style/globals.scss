@@ -1,16 +1,5 @@
 @import 'fonts/webfonts';
-// color and layout are included in mixins
-@import '../style/mixins';
-
-// Typography
-
-// Font mapping
-$font-regular: 'Maitree Regular', sans-serif;
-$font-medium: 'Maitree Medium', sans-serif;
-$font-bold: 'Maitree Bold', sans-serif;
-$font-semi-bold: 'Maitree Semi Bold', sans-serif;
-$font-light: 'Maitree Light', sans-serif;
-$font-extra-light: 'Maitree Extra Light', sans-serif;
+@import '../style/mixins'; // color and layout are included in mixins
 
 input {
     margin: 0;
@@ -19,8 +8,4 @@ input {
 body {
     margin: 0;
     font-family: $font-regular;
-}
-
-header {
-    font-family: $font-medium;
 }

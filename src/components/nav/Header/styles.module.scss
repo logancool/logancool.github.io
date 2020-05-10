@@ -9,7 +9,8 @@
     position: fixed;
     width: 100%;
     background-color: $color-primary;
-
+    font: $font-header;
+    color: $color-secondary;
     @include at-ipad {
         margin: 0 auto;
     }
@@ -30,6 +31,7 @@
     transition: $transition;
 
     &:hover {
+        color: $color-primary;
         background-color: $color-hover-secondary;
         transition: $transition;
         width: 100%;
@@ -38,6 +40,7 @@
 
 .active {
     background-color: $color-secondary;
+    color: $color-primary;
     transition: $transition;
     width: 100%;
 
