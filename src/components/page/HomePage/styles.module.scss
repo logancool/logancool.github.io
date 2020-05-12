@@ -1,3 +1,45 @@
+@import '../../../style/mixins';
+
 .home {
     //TODO: add more styles
+}
+
+.link {
+    @include reset-link;
+}
+
+.h2 {
+    @include reset-h2;
+}
+
+.p {
+    @include reset-p;
+}
+
+.intro {
+    background-color: $color-border;
+    padding: 2rem;
+}
+
+.sfix {
+    padding: 1rem;
+    background-color: $color-hover-primary;
+    &:hover {
+        transition: $transition-slow;
+        background-color: $color-light-page;
+    }
+}
+
+.ft {
+    padding: 1rem;
+    background-color: $color-hover-secondary;
+
+    &:hover {
+        transition: $transition-slow;
+        background-color: $color-dark-page;
+    }
+}
+
+.code {
+    background-color: $color-hover-primary;
 }

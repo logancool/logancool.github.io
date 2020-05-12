@@ -8,4 +8,9 @@ input {
 body {
     margin: 0;
     font-family: $font-regular;
+    line-height: 1.25rem;
+
+    @include at-iphone {
+        line-height: 1.65rem;
+    }
 }

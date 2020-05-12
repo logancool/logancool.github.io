@@ -16,7 +16,7 @@ $width-desktop: 1024px;
 $width-border: 2px;
 
 //heights
-$height-header: 4.0625rem;
+$height-header: 3.5rem;
 $height-footer: calc(#{$padding-button}* 2 + #{$size-footer-icon});
 $min-height-page: calc(100vh - (#{$height-header} + #{$height-footer})); // if
 
