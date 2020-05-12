@@ -4,12 +4,14 @@
 
 @mixin webfonts {
     $font-regular-path: './fonts/#{$font}/#{$font}-regular.ttf' !default;
-    $font-medium-path: './fonts/#{$font}/#{$font}-medium.ttf' !default;
-    $font-semi-bold-path: './fonts/#{$font}/#{$font}-semi-bold.ttf' !default;
+    //$font-medium-path: './fonts/#{$font}/#{$font}-medium.ttf' !default;
+    //$font-semi-bold-path: './fonts/#{$font}/#{$font}-semi-bold.ttf' !default;
+    $font-extra-bold-path: './fonts/#{$font}/#{$font}-extra-bold.ttf' !default;
     $font-bold-path: './fonts/#{$font}/#{$font}-bold.ttf' !default;
-    $font-extra-light-path: './fonts/#{$font}/#{$font}-extra-light.ttf' !default;
-    $font-light-path: './fonts/#{$font}/#{$font}-light.ttf' !default;
+    //$font-extra-light-path: './fonts/#{$font}/#{$font}-extra-light.ttf' !default;
+    //$font-light-path: './fonts/#{$font}/#{$font}-light.ttf' !default;
 
+    //regular
     @font-face {
         font-family: '#{$font} Regular';
         src: url($font-regular-path) format('truetype');
@@ -18,14 +20,16 @@
         font-display: swap;
     }
 
-    @font-face {
-        font-family: '#{$font} Medium';
-        src: url($font-medium-path) format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
+    //medium
+    //@font-face {
+    //    font-family: '#{$font} Medium';
+    //    src: url($font-medium-path) format('truetype');
+    //    font-weight: normal;
+    //    font-style: normal;
+    //    font-display: swap;
+    //}
 
+    //bold
     @font-face {
         font-family: '#{$font} Bold';
         src: url($font-bold-path) format('truetype');
@@ -34,27 +38,39 @@
         font-display: swap;
     }
 
+    //semi-bold
+    //@font-face {
+    //    font-family: '#{$font} Semi Bold';
+    //    src: url($font-semi-bold-path) format('truetype');
+    //    font-weight: normal;
+    //    font-style: normal;
+    //    font-display: swap;
+    //}
+
+    //extra-bold
     @font-face {
-        font-family: '#{$font} Semi Bold';
-        src: url($font-semi-bold-path) format('truetype');
+        font-family: '#{$font} Extra Bold';
+        src: url($font-extra-bold-path) format('truetype');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
     }
 
-    @font-face {
-        font-family: '#{$font} Light';
-        src: url($font-light-path) format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
+    //light
+    //@font-face {
+    //    font-family: '#{$font} Light';
+    //    src: url($font-light-path) format('truetype');
+    //    font-weight: normal;
+    //    font-style: normal;
+    //    font-display: swap;
+    //}
 
-    @font-face {
-        font-family: '#{$font} Extra Light';
-        src: url($font-extra-light-path) format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
+    //extra-light
+    //@font-face {
+    //    font-family: '#{$font} Extra Light';
+    //    src: url($font-extra-light-path) format('truetype');
+    //    font-weight: normal;
+    //    font-style: normal;
+    //    font-display: swap;
+    //}
 }
