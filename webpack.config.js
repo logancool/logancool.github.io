@@ -100,7 +100,7 @@ module.exports = (env, argv) => {
                 verbose: true,
             }),
             new HtmlWebpackPlugin({
-                title: 'My Website',
+                title: 'l_o_g_a_n_c_o_o_l',
                 template: './src/utils/root.html',
             }),
             new FaviconsWebpackPlugin(),

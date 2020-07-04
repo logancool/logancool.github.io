@@ -17,27 +17,7 @@
 }
 
 .intro {
-    background-color: $color-border;
     padding: 2rem;
-}
-
-.sfix {
-    padding: 1rem;
-    background-color: $color-hover-primary;
-    &:hover {
-        transition: $transition-slow;
-        background-color: $color-light-page;
-    }
-}
-
-.ft {
-    padding: 1rem;
-    background-color: $color-hover-secondary;
-
-    &:hover {
-        transition: $transition-slow;
-        background-color: $color-dark-page;
-    }
 }
 
 .code {

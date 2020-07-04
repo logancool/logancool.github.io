@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './styles.module.scss';
 
 const Header = () => {
-    const pages = ['me', 'resume', 'projects'];
+    const pages = ['me', 'work', 'resume', 'projects'];
 
     const [activePage, setActive] = useState('me');
 

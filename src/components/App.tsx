@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './page/HomePage';
 import ResumePage from './page/ResumePage';
 import ProjectPage from './page/ProjectPage';
+import WorkPage from './page/WorkPage';
 import Header from './nav/Header';
 import Footer from './nav/Footer';
 import './app.module.scss';
@@ -14,8 +15,9 @@ const App = () => (
             <div styleName="page">
                 <Switch>
                     <Route name="home" exact path="/" component={HomePage} />
-                    <Route name="home" exact path="/resume" component={ResumePage} />
-                    <Route name="home" exact path="/projects" component={ProjectPage} />
+                    <Route name="work" exact path="/work" component={WorkPage} />
+                    <Route name="resume" exact path="/resume" component={ResumePage} />
+                    <Route name="projects" exact path="/projects" component={ProjectPage} />
                 </Switch>
             </div>
             <Footer />
