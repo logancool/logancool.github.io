@@ -2,17 +2,24 @@
 @import '../../../style/mixins';
 
 .resume {
-    //TODO: add styles
+    padding: 1rem;
+
+    @include at-ipad {
+        padding: 0;
+    }
 }
 
 .experience {
 }
 
 .section-title {
+    font-family: $font-regular;
     margin-bottom: 0;
 }
 
 .section-date {
+
+    font-family: $font-regular;
     @include reset-h5;
 }
 
@@ -23,13 +30,16 @@
 }
 
 .headline-name {
+
 }
 
 .headline-description {
+    font-size: $font-size-p-small;
 }
 
 .skills {
-    font-size: 0.875rem;
+    font-family: $font-light;
+    font-size: $font-size-li;
 }
 
 .skill {

@@ -14,12 +14,32 @@
 
 .p {
     @include reset-p;
+    margin-bottom: 2rem;
 }
 
 .intro {
     padding: 2rem;
+    font-family: $font-light;
+    font-size: $font-size-p;
+
+    @include at-ipad {
+        font-size: $font-size-p-large;
+    }
 }
 
-.code {
-    background-color: $color-hover-primary;
+.intro-text {
+    @include at-ipad {
+        margin-bottom: 7rem;
+    }
+}
+
+.facts {
+    margin-bottom: 2rem;
+}
+
+.fact {
+    font-size: $font-size-li;
+    //code {
+    //    background-color: $color-hover-primary;
+    //}
 }

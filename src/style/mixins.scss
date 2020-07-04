@@ -70,6 +70,7 @@
 
 @mixin at-desktop {
     @include at($width-desktop) {
+        @content;
     }
 }
 

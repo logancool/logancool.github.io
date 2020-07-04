@@ -13,6 +13,7 @@
     color: $color-secondary;
     @include at-ipad {
         margin: 0 auto;
+        font-size: $font-size-header-large;
     }
 }
 

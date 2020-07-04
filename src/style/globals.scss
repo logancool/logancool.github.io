@@ -7,11 +7,11 @@ input {
 
 body {
     margin: 0;
-    font-family: $font-regular;
-    line-height: 1.25rem;
+    font-family: $font-light;
+    line-height: 1.5rem;
 
     @include at-iphone {
-        line-height: 1.65rem;
+        line-height: 1.75rem;
     }
 }
 

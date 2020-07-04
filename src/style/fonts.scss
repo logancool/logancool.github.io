@@ -1,7 +1,7 @@
 // Name of font should match folder and filenames (eg. foo -> foo/foo-regular.ttf)
 // Font should be .ttf format and include all font faces defined in fonts/webfonts.scss
 
-$font: 'Sen';
+$font: 'Lato';
 
 //
 //
@@ -9,10 +9,11 @@ $font: 'Sen';
 // do not alter template below
 //
 
+$font-extra-light: '#{$font} Extra Light', sans-serif;
+$font-light: '#{$font} Light', sans-serif;
 $font-regular: '#{$font} Regular', sans-serif;
 //$font-medium: '#{$font} Medium', sans-serif;
-$font-bold: '#{$font} Bold', sans-serif;
 //$font-semi-bold: '#{$font} Semi Bold', sans-serif;
+$font-bold: '#{$font} Bold', sans-serif;
 $font-extra-bold: '#{$font} Extra Bold', sans-serif;
-//$font-light: '#{$font} Light', sans-serif;
-//$font-extra-light: '#{$font} Extra Light', sans-serif;
+
