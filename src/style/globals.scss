@@ -8,10 +8,10 @@ input {
 body {
     margin: 0;
     font-family: $font-light;
-    line-height: 1.5rem;
+    line-height: $height-line;
 
-    @include at-iphone {
-        line-height: 1.75rem;
+    @include at-ipad {
+        line-height: $height-line-large;
     }
 }
 

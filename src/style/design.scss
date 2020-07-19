@@ -3,7 +3,8 @@
 @import '../style/fonts';
 
 //fonts
-$font-header: $font-size-header $font-bold;
+$font-header: #{$font-size-header}/ #{$height-line} $font-bold;
+$font-header-large: #{$font-size-header}/ #{$height-line-large} $font-bold;
 
 //borders
 $border: $width-border solid $color-border;
@@ -13,4 +14,5 @@ $box-shadow: 5px 10px $color-border;
 
 //transition
 $transition: ease-out 200ms;
-$transition-slow: ease-in 1000ms;
+$transition-fast: ease-out 100ms;
+$transition-slow: ease-in 500ms;

@@ -3,6 +3,10 @@
 
 .placeholder {
     min-height: $height-header;
+
+    @include at-ipad {
+        min-height: $height-header-large;
+    }
 }
 
 .header {
@@ -11,9 +15,10 @@
     background-color: $color-primary;
     font: $font-header;
     color: $color-secondary;
+
     @include at-ipad {
         margin: 0 auto;
-        font-size: $font-size-header-large;
+        font: $font-header-large;
     }
 }
 
@@ -26,7 +31,7 @@
 
 .item {
     width: 50%;
-    padding: 1rem;
+    padding: $padding-nav;
 
     box-sizing: border-box;
     transition: $transition;

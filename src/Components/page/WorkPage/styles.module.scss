@@ -1,34 +1,48 @@
 @import '../../../style/mixins';
 
 .home {
-    //TODO: add more styles
+    //add style
 }
 
 .work {
+    display: grid;
     width: 100%;
+
+    // since the page isn't large enough to fill 100% height
+    @include at-ipad {
+        height: $height-page-min;
+    }
 }
 
-.link {
+.full-width {
     margin: 0 auto;
     padding: 1rem;
     pointer-events: none;
 
-    &:hover {
-        transition: $transition-slow;
-        background-color: $color-hover-primary;
+    @include at-ipad {
+        width: 100%;
+
+        &:hover {
+            transition: $transition;
+            background-color: $color-hover-primary;
+        }
     }
 }
 
 .h2 {
     @include reset-h2;
 
-    display: table;
+    display: table; //for underline width
     margin-bottom: 0.5rem;
     border-bottom: 5px solid $color-secondary;
 }
 
 .p {
     @include reset-p;
+}
+
+.a {
+    @include reset-link;
 }
 
 .sfix,
