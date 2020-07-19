@@ -4,14 +4,18 @@
     //TODO: add more styles
 }
 
-.link {
-    @include reset-link;
-    margin: 2rem auto;
-    padding: 1rem;
+.work {
+    width: 100%;
+}
 
-    &:hover + .h2 {
+.link {
+    margin: 0 auto;
+    padding: 1rem;
+    pointer-events: none;
+
+    &:hover {
         transition: $transition-slow;
-        width: 100%;
+        background-color: $color-hover-primary;
     }
 }
 
@@ -27,14 +31,15 @@
     @include reset-p;
 }
 
-.sfix {
-    padding: 1rem;
-}
-
+.sfix,
 .ft {
+    margin: 0 auto;
+    @include reset-link;
     padding: 1rem;
+    max-width: 48rem;
+    pointer-events: auto;
 }
 
-.code {
+.link .code {
     background-color: $color-hover-primary;
 }
