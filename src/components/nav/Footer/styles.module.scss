@@ -12,6 +12,10 @@
 
 .icons {
     display: flex;
-    padding: 0 20%;
+    margin: 0 auto;
     justify-content: space-around;
+
+    @include at-ipad {
+        justify-content: space-between;
+    }
 }

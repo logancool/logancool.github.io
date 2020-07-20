@@ -1,9 +1,12 @@
-@import '../style/colors';
-@import '../style/layout';
+@import '../style/mixins';
 
 .page {
     display: flex;
     align-items: center;
     background-color: $color-page;
     min-height: $height-page-min;
+
+    @include at-ipad {
+        min-height: $height-page-min-large;
+    }
 }

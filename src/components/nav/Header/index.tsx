@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <header styleName="placeholder">
-            <div styleName="header">
+            <nav styleName="header">
                 <ul styleName="items">
                     {pages.map(page => (
                         <li key={page} styleName={`item ${activePage === page ? 'active' : ''}`}>
@@ -34,7 +34,7 @@ const Header = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
+            </nav>
         </header>
     );
 };
