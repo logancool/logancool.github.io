@@ -10,11 +10,19 @@
     justify-content: center;
     width: calc(100% - 2px); // grid borders
 
+    // since the page isn't large enough to fill 100% height
     @include at-ipad {
+        padding: 0 3rem;
+        min-height: $height-page-min-large;
+        align-content: space-around;
         align-items: center;
         grid-row: 2;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 'sfix sfix sfix-logo' 'ft-logo ft ft';
+    }
+
+    @include at-desktop {
+        align-content: normal;
     }
 }
 

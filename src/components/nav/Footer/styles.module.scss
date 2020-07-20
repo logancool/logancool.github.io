@@ -15,7 +15,8 @@
     margin: 0 auto;
     justify-content: space-around;
 
-    @include at-ipad {
+    @include at-desktop {
         justify-content: space-between;
+        max-width: $width-iphone;
     }
 }

@@ -13,6 +13,7 @@ $font-size-li: 1rem;
 //padding
 $padding-button: 0.5rem;
 $padding-nav: 1rem;
+$padding-page: 1rem;
 
 //widths
 $width-iphone: 425px;
@@ -27,8 +28,8 @@ $height-line-large: 1.75rem;
 $height-header: calc(#{$height-line} + #{$padding-nav}* 2);
 $height-header-large: calc(#{$height-line-large} + #{$padding-nav}* 2);
 $height-footer: calc(#{$padding-button}* 2 + #{$size-footer-icon});
-$height-page-min: calc(100vh - (#{$height-header} + #{$height-footer}));
-$height-page-min-large: calc(100vh - (#{$height-header-large} + #{$height-footer}));
+$height-page-min: calc(100vh - (#{$height-header} + #{$height-footer})+ #{$padding-page}* 2);
+$height-page-min-large: calc(100vh - (#{$height-header-large} + #{$height-footer} + #{$padding-page}* 2));
 
 //spacing
 $space-below: 2rem;
