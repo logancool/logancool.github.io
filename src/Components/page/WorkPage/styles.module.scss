@@ -6,52 +6,73 @@
 
 .work {
     display: grid;
-    width: 100%;
+    align-content: space-around;
+    width: calc(100% - 2px); // grid borders
 
     // since the page isn't large enough to fill 100% height
     @include at-ipad {
         height: $height-page-min;
+        grid-row: 2;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'sfix sfix sfix-logo' 'ft-logo ft ft';
     }
 }
 
-.full-width {
-    margin: 0 auto;
-    padding: 1rem;
-    pointer-events: none;
-
-    @include at-ipad {
-        width: 100%;
-
-        &:hover {
-            transition: $transition;
-            background-color: $color-hover-primary;
-        }
-    }
-}
-
-.h2 {
+.workplace {
     @include reset-h2;
 
     display: table; //for underline width
     margin-bottom: 0.5rem;
-    border-bottom: 5px solid $color-secondary;
+
+    @include underline-title;
+
+    a {
+        @include reset-link;
+    }
 }
 
 .p {
     @include reset-p;
 }
 
-.a {
+.link {
     @include reset-link;
+    @include underline-link;
 }
 
 .sfix,
 .ft {
-    margin: 0 auto;
     @include reset-link;
     padding: 1rem;
     max-width: 48rem;
     pointer-events: auto;
+}
+
+.sfix {
+    @include at-ipad {
+        grid-area: sfix;
+    }
+}
+.sfix-logo {
+    display: none;
+    @include at-ipad {
+        display: block;
+        grid-area: sfix-logo;
+    }
+}
+
+.ft {
+    @include at-ipad {
+        grid-area: ft;
+    }
+}
+
+.ft-logo {
+    display: none;
+    @include at-ipad {
+        display: block;
+        grid-area: ft-logo;
+    }
 }
 
 .link .code {
