@@ -1,9 +1,5 @@
 @import '../../../style/mixins';
 
-.home {
-    //TODO: add more styles
-}
-
 .link {
     @include reset-link;
 }
@@ -17,8 +13,9 @@
     margin-bottom: 2rem;
 }
 
-.intro {
+.intro-wrapper {
     padding: 2rem;
+    position: relative;
     font-family: $font-light;
     font-size: $font-size-p;
 
@@ -27,19 +24,99 @@
     }
 }
 
-.intro-text {
-    @include at-ipad {
-        margin-bottom: 7rem;
+.intro {
+    @include reset-p;
+
+    font-size: $font-size-intro;
+    line-height: $height-line-large;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 30%;
+
+    @include at-iphone {
+        font-size: $font-size-intro;
     }
 }
 
-.facts {
+// must match same number of intro messages
+.intro-1 {
+    animation: animate-intro 4s linear normal both;
+}
+
+.intro-2 {
+    animation: animate-intro 4s linear normal both;
+    animation-delay: 4s;
+}
+
+.intro-3 {
+    animation: animate-intro 4s linear normal both;
+    animation-delay: 8s;
+}
+
+.intro-facts {
+    opacity: 0;
     margin-bottom: 2rem;
+    @include reset-list;
+
+    animation: animate-intro-facts 4s linear normal both;
+    animation-delay: 12s;
+}
+
+.intro-facts-title {
+    font-family: $font-regular;
+    font-size: $font-size-header-large;
+}
+
+.facts {
+    @include reset-list;
+    padding: 1rem;
+}
+
+.facts-title {
+    font-family: $font-regular;
+    font-size: $font-size-header-large;
 }
 
 .fact {
     font-size: $font-size-li;
-    //code {
-    //    background-color: $color-hover-primary;
-    //}
+}
+
+.outro {
+    position: absolute;
+    font-size: $font-size-p;
+}
+
+// must match same number of outro messages
+.outro-1 {
+    animation: animate-intro 4s linear normal both;
+    animation-delay: 16s;
+}
+
+.outro-2 {
+    animation: animate-intro 4s linear normal both;
+    animation-delay: 20s;
+}
+
+// animations
+@keyframes animate-intro {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animate-intro-facts {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
