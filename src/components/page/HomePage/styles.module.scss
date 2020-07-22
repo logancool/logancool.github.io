@@ -56,17 +56,11 @@
 }
 
 .intro-facts {
-    opacity: 0;
-    margin-bottom: 2rem;
     @include reset-list;
-
+    padding: 1rem;
+    opacity: 0;
     animation: animate-intro-facts 4s linear normal both;
     animation-delay: 12s;
-}
-
-.intro-facts-title {
-    font-family: $font-regular;
-    font-size: $font-size-header-large;
 }
 
 .facts {
@@ -77,10 +71,13 @@
 .facts-title {
     font-family: $font-regular;
     font-size: $font-size-header-large;
+    margin-bottom: 0.7rem;
 }
 
 .fact {
+    @include reset-list;
     font-size: $font-size-li;
+    margin-bottom: 0.5rem;
 }
 
 .outro {

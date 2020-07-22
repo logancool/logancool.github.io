@@ -25,7 +25,7 @@ const HomePage = () => {
                         />
                     ))}
                     <ul styleName="intro-facts">
-                        <div styleName="intro-facts-title">{data.title}</div>
+                        <div styleName="facts-title">{data.title}</div>
                         {data.facts.map((fact, index) => (
                             <li key={index} dangerouslySetInnerHTML={{ __html: fact }} styleName="fact" />
                         ))}
