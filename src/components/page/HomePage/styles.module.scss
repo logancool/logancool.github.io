@@ -33,29 +33,33 @@
     text-align: center;
     left: 0;
     right: 0;
-    top: 30%;
-    padding: 1rem;
+    top: 10%;
     max-width: $width-ipad;
     margin: 0 auto;
 
     @include at-iphone {
+        top: 30%;
         font-size: $font-size-intro;
     }
 }
+$intro-top: 40%;
 
 // must match same number of intro messages
 .intro-1 {
     animation: animate-intro 4s linear normal both;
+    top: $intro-top;
 }
 
 .intro-2 {
     animation: animate-intro 4s linear normal both;
     animation-delay: 4s;
+    top: $intro-top;
 }
 
 .intro-3 {
     animation: animate-intro 4s linear normal both;
     animation-delay: 8s;
+    top: $intro-top;
 }
 
 .intro-facts {
@@ -71,9 +75,13 @@
 
 .facts {
     @include reset-list;
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem;
     max-width: $width-ipad;
     margin: 0 auto;
+
+    @include at-desktop {
+        padding-top: 1rem;
+    }
 }
 
 .facts-title {
@@ -85,7 +93,7 @@
 .fact {
     @include reset-list;
     font-size: $font-size-li;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
     &:before {
         @include chevron;
@@ -96,23 +104,34 @@
         margin-left: 0.25rem;
         transition: $transition;
     }
+
+    @include at-desktop {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .outro {
+    @include reset-list;
     position: absolute;
-    font-size: $font-size-p;
+    font-size: $font-size-icon;
+    bottom: 1rem;
+    right: 15%;
+
+    @include at-desktop {
+        bottom: 0;
+    }
 }
 
 // must match same number of outro messages
 .outro-1 {
     animation: animate-intro 4s linear normal both;
-    animation-delay: 16s;
+    animation-delay: 24s;
 }
 
-.outro-2 {
-    animation: animate-intro 4s linear normal both;
-    animation-delay: 20s;
-}
+// .outro-2 {
+//     animation: animate-intro 4s linear normal both;
+//     animation-delay: 20s;
+// }
 
 // animations
 @keyframes animate-intro {

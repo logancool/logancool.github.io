@@ -8,7 +8,7 @@ const data = {
         'I love working with others, and I am always excited to hear other people’s ideas.',
         'Currently most of my time is spent in the <code>.front-end</code> bucket however on-call seems to enlighten me of all of the other cool things happening on the web.',
     ],
-    outro: ['Find me in the footer', 'Thanks for surfing my&nbsp;way&nbsp;🌊'],
+    outro: ['🌊'],
 };
 
 export default data;

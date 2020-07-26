@@ -4,9 +4,8 @@
     display: flex;
     align-items: center;
     background-color: $color-page;
-    min-height: $height-page-min;
 
-    @include at-ipad {
+    @include at-desktop {
         min-height: $height-page-min-large;
     }
 }

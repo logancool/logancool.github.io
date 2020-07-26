@@ -5,9 +5,9 @@ $size-footer-icon: 2.5rem;
 $font-size-header: 1rem;
 $font-size-header-large: 1.25rem;
 $font-size-intro: 1.75rem;
+$font-size-icon: 2rem;
 $font-size-intro-large: 2rem;
 $font-size-p-small: 0.825rem;
-$font-size-p: 1rem;
 $font-size-p: 1rem;
 $font-size-p-large: 1.125rem;
 $font-size-li: 1rem;
@@ -28,7 +28,7 @@ $width-underline-link: 3px;
 //heights
 $height-line: 1.5rem;
 $height-line-large: 1.75rem;
-$height-header: calc(#{$height-line} + #{$padding-nav}* 2);
+$height-header: calc(#{$height-line} + #{$padding-nav}* 2); // note doesn't work on mobile
 $height-header-large: calc(#{$height-line-large} + #{$padding-nav}* 2);
 $height-footer: calc(#{$padding-button}* 2 + #{$size-footer-icon});
 $height-page-min: calc(100vh - (#{$height-header} + #{$height-footer} + 2 * #{$padding-page}) + #{$padding-footer});
