@@ -1,3 +1,23 @@
-.projects {
-    //TODO: add styles
+@import '../../../style/mixins';
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+        'project-a project-b stack'
+        'project-a project-b stack';
+}
+
+.project-a {
+    grid-row-start: project-a;
+}
+
+.project-b {
+    grid-row-start: project-b;
+}
+
+.stack {
+    grid-area: stack;
+    text-align: right;
 }

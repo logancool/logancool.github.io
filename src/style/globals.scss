@@ -19,3 +19,7 @@ body {
     color: $color-secondary;
     background: $color-hover-primary;
 }
+
+:focus {
+    outline-color: $color-hover-primary;
+}
