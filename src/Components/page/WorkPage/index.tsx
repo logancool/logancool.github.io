@@ -20,8 +20,8 @@ const WorkPage = () => (
                         Carbon 5
                     </a>
                     , we built a Node.js static site using Jekyll. Later, my team grew and began focusing on a
-                    customized static react app/rails server. During this time I led and broke down both internal and
-                    external facing projects using&nbsp;Jira.
+                    customized static react app/rails server. During this time I managed an intern and led small
+                    projects using&nbsp;Jira.
                 </p>
             </div>
             <img styleName="sfix-logo" src={sfixLogo} />
@@ -33,7 +33,7 @@ const WorkPage = () => (
                     Starting with ActionScript 2, I designed and built advertisement creatives for large and small
                     businesses including clients such as Hulu, Gap, and CBS. I worked with our internal developers in
                     Leeds and New York directly, to help improve internal webapp tooling. After HTML began dominating
-                    the industry, I worked mostly with CSS and JavaScript frameworks such as&nbsp;
+                    the industry, I worked mostly in vanilla CSS using a JavaScript webGL framework,&nbsp;
                     <a styleName="link" href="https://threejs.org/">
                         Three.js
                     </a>

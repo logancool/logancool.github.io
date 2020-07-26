@@ -13,10 +13,11 @@ const data = {
                 end: 'Present',
             },
             skills: [
-                'Expand the logged out experience from women-only using Embedded Ruby',
-                'Lead partnership with large external business partners maintaining a positive cohesive relationship. Eg. Dynamic Yield',
-                'Rebuild front-end leveraging webpack and es6 tooling',
-                'Lead technical projects collaborating across departments',
+                'Establish the logged-out experience from /women to 20+ pages using Embedded Ruby',
+                'Manage an intern leading to a full-time hire',
+                'Lead and maintain a positive, cohesive eng relationship with business partner Dynamic Yield',
+                'Rebuild front-end stack leveraging babel 7±, webpack and ES6 tooling',
+                'Lead small technical projects collaborating across departments',
             ],
         },
         {
@@ -29,7 +30,7 @@ const data = {
             },
             skills: [
                 'Build JavaScript/HTML 5 creatives for clients delivering over 4 million impressions',
-                'Lead on site technical presentations for client tools',
+                'Lead on-site technical presentations for client tools',
                 'Lead small team meetings discussing creative development triaging issues and outlining solutions',
                 'Lead QA practices implementing new practices and policies',
             ],
@@ -43,9 +44,9 @@ const data = {
                 end: 'April 2015',
             },
             skills: [
-                'Operated the 4500 acre family farm for one complete growing',
-                'Machine maintenance with both very old and new equipment',
-                'Run software updates, debug errors, and onboard hires',
+                'Operate the 4500 acre family farm for one complete growing season',
+                'Machine maintenance with very old and very new equipment',
+                'Run software updates, debug errors, and onboard hired workers',
                 'Take part in large financial and business decisions',
             ],
         },
