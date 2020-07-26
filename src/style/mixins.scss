@@ -74,6 +74,17 @@
     }
 }
 
+@mixin chevron {
+    content: '';
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.25rem 0.25rem 0 0;
+    height: 0.5em;
+    width: 0.5rem;
+    margin-right: 0.5rem;
+    transform: rotate(45deg);
+}
+
 @mixin underline-title {
     border-bottom: $width-underline-title solid $color-secondary;
 

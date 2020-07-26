@@ -34,6 +34,9 @@
     left: 0;
     right: 0;
     top: 30%;
+    padding: 1rem;
+    max-width: $width-ipad;
+    margin: 0 auto;
 
     @include at-iphone {
         font-size: $font-size-intro;
@@ -57,6 +60,9 @@
 
 .intro-facts {
     @include reset-list;
+    max-width: $width-ipad;
+    margin: 0 auto;
+    text-align: left;
     padding: 1rem;
     opacity: 0;
     animation: animate-intro-facts 4s linear normal both;
@@ -66,6 +72,8 @@
 .facts {
     @include reset-list;
     padding: 1rem;
+    max-width: $width-ipad;
+    margin: 0 auto;
 }
 
 .facts-title {
@@ -78,6 +86,16 @@
     @include reset-list;
     font-size: $font-size-li;
     margin-bottom: 0.5rem;
+
+    &:before {
+        @include chevron;
+    }
+
+    &:hover:before {
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        transition: $transition;
+    }
 }
 
 .outro {
