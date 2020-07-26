@@ -4,6 +4,7 @@ import HomePage from './page/HomePage';
 import ResumePage from './page/ResumePage';
 import ProjectPage from './page/ProjectPage';
 import WorkPage from './page/WorkPage';
+import PageNotFound from './page/PageNotFound';
 import Header from './nav/Header';
 import Footer from './nav/Footer';
 import './app.module.scss';
@@ -18,6 +19,7 @@ const App = () => (
                     <Route name="work" exact path="/work" component={WorkPage} />
                     <Route name="resume" exact path="/resume" component={ResumePage} />
                     <Route name="projects" exact path="/projects" component={ProjectPage} />
+                    <Route component={PageNotFound} />
                 </Switch>
             </div>
             <Footer />
