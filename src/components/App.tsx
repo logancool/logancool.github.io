@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './page/HomePage';
 import ResumePage from './page/ResumePage';
 import ProjectPage from './page/ProjectPage';
@@ -10,7 +10,7 @@ import Footer from './nav/Footer';
 import './app.module.scss';
 
 const App = () => (
-    <Router basename="/">
+    <Router>
         <Fragment>
             <Header />
             <div styleName="page">
