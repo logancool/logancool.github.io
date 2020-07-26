@@ -19,7 +19,6 @@ const App = () => (
                     <Route name="work" exact path="/work" component={WorkPage} />
                     <Route name="resume" exact path="/resume" component={ResumePage} />
                     <Route name="projects" exact path="/projects" component={ProjectPage} />
-                    <Route component={PageNotFound} />
                 </Switch>
             </div>
             <Footer />
