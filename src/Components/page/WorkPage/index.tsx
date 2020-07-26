@@ -27,7 +27,7 @@ const WorkPage = () => (
             <img styleName="sfix-logo" src={sfixLogo} />
             <div styleName="ft" href="https://www.flashtalking.com/">
                 <h2 styleName="workplace">
-                    <a href="https://www.flashtaking.com/">Flashtalking</a>
+                    <a href="https://www.flashtalking.com/">Flashtalking</a>
                 </h2>
                 <p styleName="p">
                     Starting with ActionScript 2, I designed and built advertisement creatives for large and small
