@@ -10,7 +10,7 @@ import Footer from './nav/Footer';
 import './app.module.scss';
 
 const App = () => (
-    <Router>
+    <Router basename="/">
         <Fragment>
             <Header />
             <div styleName="page">
