@@ -13,6 +13,7 @@ module.exports = (env, argv) => {
         entry: `${SRC_DIR}/index.tsx`,
         devServer: {
             historyApiFallback: true,
+            contentBase: './',
             hot: true,
         },
         output: {
