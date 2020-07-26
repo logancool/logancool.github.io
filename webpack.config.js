@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SRC_DIR = path.join(__dirname, '/src');
@@ -99,6 +100,12 @@ module.exports = (env, argv) => {
                 protectWebpackAssets: true,
 
                 verbose: true,
+            }),
+            new CopyWebpackPlugin({
+                patterns: [{ from: 'static' }],
+                options: {
+                    concurrency: 100,
+                },
             }),
             new HtmlWebpackPlugin({
                 title: 'l_o_g_a_n_c_o_o_l',
