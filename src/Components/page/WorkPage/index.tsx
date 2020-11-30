@@ -32,7 +32,7 @@ const WorkPage = () => (
                 <p styleName="p">
                     Starting with ActionScript 2, I designed and built advertisement creatives for large and small
                     businesses including clients such as Hulu, Gap, and CBS. I worked with our internal developers in
-                    Leeds and New York directly, to help improve internal webapp tooling. After HTML began dominating
+                    Leeds and New York directly, to help improve internal web app tooling. After HTML began dominating
                     the industry, I worked mostly in vanilla CSS using a JavaScript webGL framework,&nbsp;
                     <a styleName="link" href="https://threejs.org/">
                         Three.js

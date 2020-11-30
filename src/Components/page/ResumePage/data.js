@@ -44,7 +44,7 @@ const data = {
                 end: 'April 2015',
             },
             skills: [
-                'Operate the 4500 acre family farm for one complete growing season',
+                'Operate the 4500 acre family grain farm',
                 'Machine maintenance with very old and very new equipment',
                 'Run software updates, debug errors, and onboard hired workers',
                 'Take part in large financial and business decisions',
