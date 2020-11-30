@@ -46,19 +46,19 @@ $intro-top: 40%;
 
 // must match same number of intro messages
 .intro-1 {
-    animation: animate-intro 4s linear normal both;
+    animation: animate-intro 2s linear normal both;
     top: $intro-top;
 }
 
 .intro-2 {
-    animation: animate-intro 4s linear normal both;
-    animation-delay: 4s;
+    animation: animate-intro 2s linear normal both;
+    animation-delay: 2s;
     top: $intro-top;
 }
 
 .intro-3 {
-    animation: animate-intro 4s linear normal both;
-    animation-delay: 8s;
+    animation: animate-intro 2s linear normal both;
+    animation-delay: 4s;
     top: $intro-top;
 }
 
@@ -69,8 +69,8 @@ $intro-top: 40%;
     text-align: left;
     padding: 1rem;
     opacity: 0;
-    animation: animate-intro-facts 4s linear normal both;
-    animation-delay: 12s;
+    animation: animate-intro-facts 2s linear normal both;
+    animation-delay: 6s;
 }
 
 .facts {
@@ -124,12 +124,12 @@ $intro-top: 40%;
 
 // must match same number of outro messages
 .outro-1 {
-    animation: animate-intro 4s linear normal both;
-    animation-delay: 24s;
+    animation: animate-intro 2s linear normal both;
+    animation-delay: 22s;
 }
 
 // .outro-2 {
-//     animation: animate-intro 4s linear normal both;
+//     animation: animate-intro 2s linear normal both;
 //     animation-delay: 20s;
 // }
 
