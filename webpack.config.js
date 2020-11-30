@@ -110,7 +110,7 @@ module.exports = (env, argv) => {
                 title: 'l_o_g_a_n_c_o_o_l',
                 template: './src/utils/root.html',
             }),
-            new FaviconsWebpackPlugin('./favicon.png'),
+            new FaviconsWebpackPlugin('😎'),
             new MiniCssExtractPlugin({
                 filename: '[name].[hash].css',
                 chunkFilename: '[id].[hash].css',
