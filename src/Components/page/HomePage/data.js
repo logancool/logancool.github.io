@@ -1,5 +1,5 @@
 const data = {
-    intro: ['Hi there 👋', 'Logan here.', "Let's get to know each other"],
+    intro: ['Hi there 👋', 'Logan here.'],
     title: 'Who am I?',
     facts: [
         'I consider myself as a very positive person who loves music, traveling, and being outside.',

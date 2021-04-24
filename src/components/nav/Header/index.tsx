@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import './styles.module.scss';
 
 const Header = () => {
-    const pages = ['me', 'work', 'resume', 'projects'];
+    const pages = ['me', 'work', 'resume', 'stack'];
     const history = useHistory();
 
     const [activePage, setActive] = useState('me');
