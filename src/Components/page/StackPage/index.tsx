@@ -7,11 +7,13 @@ const StackPage = () => (
         <div>In order of proficiency..</div>
         <ul>
             <li>React</li>
-            <li>SCSS/CSS Modules</li>
-            <li>Percy</li>
             <li>Webpack</li>
-            <li>Storybook</li>
+            <li>SCSS/CSS Modules</li>
             <li>React Testing Library/ Jest Enzyme</li>
+            <li>DataDog</li>
+            <li>Cloudinary</li>
+            <li>Percy</li>
+            <li>Storybook</li>
             <li>Babel</li>
             <li>Infra tools AWS Cloudfront</li>
             <li>GraphQL with Apollo Client</li>

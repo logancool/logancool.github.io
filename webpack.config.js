@@ -1,12 +1,12 @@
+const webpack = require('webpack');
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SRC_DIR = path.join(__dirname, '/src');
 
-module.exports = (env, argv) => {
+module.exports = (_, argv) => {
     const isDevelopment = argv.mode === 'development';
 
     return {
@@ -19,6 +19,7 @@ module.exports = (env, argv) => {
         output: {
             filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
             path: path.resolve('./dist'),
+            clean: true,
         },
         resolve: {
             extensions: ['.js', '.json', '.scss', '.ts', '.tsx'],
@@ -94,18 +95,13 @@ module.exports = (env, argv) => {
             ],
         },
         plugins: [
-            new CleanWebpackPlugin({
-                cleanStaleWebpackAssets: false,
-                protectWebpackAssets: true,
-
-                verbose: true,
-            }),
             new CopyWebpackPlugin({
                 patterns: [{ from: 'static' }],
                 options: {
                     concurrency: 100,
                 },
             }),
+            new webpack.HotModuleReplacementPlugin(),
             new HtmlWebpackPlugin({
                 title: 'l_o_g_a_n_c_o_o_l',
                 template: './src/utils/root.html',
