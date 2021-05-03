@@ -8,8 +8,8 @@ const SRC_DIR = path.join(__dirname, '/src');
 
 module.exports = (_, argv) => {
     const isDevelopment = argv.mode === 'development';
-
     return {
+        mode: isDevelopment ? 'development' : 'production',
         devtool: 'source-map',
         entry: `${SRC_DIR}/index.tsx`,
         devServer: {
@@ -17,7 +17,7 @@ module.exports = (_, argv) => {
             hot: true,
         },
         output: {
-            filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js',
+            filename: isDevelopment ? 'bundle.js' : 'bundle.[contenthash].js',
             path: path.resolve('./dist'),
             clean: true,
         },
@@ -29,8 +29,8 @@ module.exports = (_, argv) => {
                 {
                     test: /\.scss$/,
                     exclude: /\.module\.scss$/,
-                    loader: [
-                        isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    use: [
+                        { loader: isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader },
                         'css-loader',
                         {
                             loader: 'sass-loader',
@@ -65,7 +65,11 @@ module.exports = (_, argv) => {
                 },
                 {
                     test: /\.png$/,
-                    loader: 'url-loader?limit=100000&minetype=image/png',
+                    loader: 'url-loader',
+                    options: {
+                        limit: 100000,
+                        mimetype: 'image/png',
+                    },
                 },
                 {
                     test: /\.jpg/,
