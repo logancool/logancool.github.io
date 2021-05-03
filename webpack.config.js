@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SRC_DIR = path.join(__dirname, '/src');
 
@@ -109,8 +108,8 @@ module.exports = (_, argv) => {
             new HtmlWebpackPlugin({
                 title: 'l_o_g_a_n_c_o_o_l',
                 template: './src/utils/root.html',
+                favicon: './favicon.ico'
             }),
-            new FaviconsWebpackPlugin('./favicon.png'),
             new MiniCssExtractPlugin({
                 filename: '[name].[hash].css',
                 chunkFilename: '[id].[hash].css',
