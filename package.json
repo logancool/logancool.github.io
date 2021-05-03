@@ -33,7 +33,6 @@
         "browser-cookies": "^1.2.0",
         "copy-webpack-plugin": "^6.0.3",
         "express": "^4.17.1",
-        "favicons": "^6.2.1",
         "gh-pages": "^2.2.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
