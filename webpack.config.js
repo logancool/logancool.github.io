@@ -107,7 +107,7 @@ module.exports = (_, argv) => {
             }),
             new webpack.HotModuleReplacementPlugin(),
             new HtmlWebpackPlugin({
-                title: '(._0)',
+                title: 'ᲃ༠༠l',
                 template: './src/utils/root.html',
                 favicon: './favicon.ico'
             }),
