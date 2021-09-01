@@ -3,4 +3,4 @@ Welcome. This is my personal gh-pages hosted site repository. This code is inten
 Thanks.
 
 ##
-Note: `dev` is being treated like `master` since gh-pages doesn't allow changing branches under org accounts.
+Note: `dev` is being treated like `main` since gh-pages doesn't allow changing branches under org accounts.
