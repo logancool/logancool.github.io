@@ -56,12 +56,6 @@ $intro-top: 40%;
     top: $intro-top;
 }
 
-.intro-3 {
-    animation: animate-intro 2s linear normal both;
-    animation-delay: 4s;
-    top: $intro-top;
-}
-
 .intro-facts {
     @include reset-list;
     max-width: $width-ipad;
@@ -95,16 +89,6 @@ $intro-top: 40%;
     font-size: $font-size-li;
     margin-bottom: 1rem;
 
-    &:before {
-        @include chevron;
-    }
-
-    &:hover:before {
-        margin-right: 0.25rem;
-        margin-left: 0.25rem;
-        transition: $transition;
-    }
-
     @include at-desktop {
         margin-bottom: 0.5rem;
     }
@@ -127,11 +111,6 @@ $intro-top: 40%;
     animation: animate-intro 2s linear normal both;
     animation-delay: 22s;
 }
-
-// .outro-2 {
-//     animation: animate-intro 2s linear normal both;
-//     animation-delay: 20s;
-// }
 
 // animations
 @keyframes animate-intro {

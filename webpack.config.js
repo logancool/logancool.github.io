@@ -15,6 +15,7 @@ module.exports = (_, argv) => {
             historyApiFallback: true,
             hot: true,
         },
+        performance: { hints: false },
         output: {
             filename: isDevelopment ? 'bundle.js' : 'bundle.[contenthash].js',
             path: path.resolve('./dist'),
