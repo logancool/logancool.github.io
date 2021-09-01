@@ -29,7 +29,7 @@ const HomePage = () => {
                         {data.facts.map((fact, index) => (
                             <li key={index} dangerouslySetInnerHTML={{ __html: fact }} styleName="fact" />
                         ))}
-                        {data.outro.map((text, index) => (
+                        {data.outro && data.outro.map((text, index) => (
                             <p
                                 key={`outro-${index}`}
                                 styleName={`outro outro-${index + 1}`}

@@ -1,15 +1,11 @@
 const data = {
     intro: ['Hi there 👋', 'Logan here.'],
-    title: 'Who???🦉... Here are a few truths and a lie 🙃',
+    title: 'Please say hello.',
     facts: [
-        'I am a very outgoing, positive child-at-heart who loves music, traveling, and being outside.',
-        '&#9I moved to the bay area in 2015 from a beautiful farm up in Canada🇨🇦.',
-        'It is highly likely I am listening to Elton John, or Queen at any given moment.',
-        'I can write css without copy-pasting.',
-        'I thrive in a team environment. I love working across departments, and meeting new people.',
-        'My time is mainly spent in <code>.front-end</code> but I sometimes have to debug rails errors DataDog logs 🤦🏻‍♂️',
+        'I love meeting new people. I am a child-at-heart who loves music, traveling, and being outside.',
+        'I love working across departments, in teams, and meeting new people.',
+        'Elton John, Billy Joel, Queen 🎹',
     ],
-    outro: ['Thanks for stoppin bye eh 🌊'],
 };
 
 export default data;
