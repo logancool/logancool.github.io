@@ -7,7 +7,7 @@ const data = {
         {
             company: 'Stitch Fix',
             location: 'San Francisco',
-            title: 'Front End Engineer',
+            title: 'Lead Front End Engineer',
             date: {
                 start: 'April 2017',
                 end: 'Present',

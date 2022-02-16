@@ -77,14 +77,8 @@ module.exports = (_, argv) => {
                 },
                 {
                     test: /\.(woff|woff2|ttf|otf|eot)$/,
-                    use: [
-                        {
-                            loader: 'file-loader',
-                            options: {
-                                outputPath: `fonts/`,
-                            },
-                        },
-                    ],
+                    type: 'asset/resource',
+                    dependency: { not: ['url'] },
                 },
                 {
                     test: /\.js?/,
@@ -107,7 +101,7 @@ module.exports = (_, argv) => {
             }),
             new webpack.HotModuleReplacementPlugin(),
             new HtmlWebpackPlugin({
-                title: 'ᲃ༠༠l',
+                title: 'Hello, I am Mr. Logan Cool',
                 template: './src/utils/root.html',
                 favicon: './favicon.ico'
             }),
