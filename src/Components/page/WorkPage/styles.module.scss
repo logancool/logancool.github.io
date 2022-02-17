@@ -12,14 +12,13 @@
 
     // since the page isn't large enough to fill 100% height
     @include at-ipad {
-        padding: 0 3rem;
         height: $height-page-min-large;
         max-height: 52rem;
         align-content: space-around;
         align-items: center;
         grid-row: 2;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 'sfix sfix sfix-logo' 'ft-logo ft ft';
+        grid-template-areas: 'sfix sfix sfix-logo' 'ft-logo ft ft' 'side side side';
     }
 
     @include at-desktop {
@@ -83,6 +82,17 @@
         display: block;
         width: 100%;
         grid-area: ft-logo;
+    }
+}
+
+.side {
+    padding: 1rem;
+    h2 {
+        @include reset-h2;
+        margin-bottom: 0.5rem;
+    }
+    @include at-ipad {
+        grid-area: side;
     }
 }
 

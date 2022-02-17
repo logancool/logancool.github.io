@@ -1,7 +1,7 @@
 const data = {
     headline: {
-        name: 'Logan Cool',
-        role: 'Front End Engineer',
+        name: '',
+        role: '',
     },
     experience: [
         {
@@ -13,11 +13,11 @@ const data = {
                 end: 'Present',
             },
             skills: [
-                'Establish the logged-out experience from /women to 20+ pages using Embedded Ruby',
-                'Manage an intern leading to a full-time hire',
-                'Lead and maintain a positive, cohesive eng relationship with business partner Dynamic Yield',
-                'Rebuild front-end stack leveraging babel 7±, webpack and ES6 tooling',
-                'Lead small technical projects collaborating across departments',
+                'Built the logged-out experience from "/women" only to 100+ pages using a custom webpack/rails hybrid app',
+                'Created a front-end focussed team responsible for visitor signup',
+                'Developed internal WYSIWYG editor that automates page development',
+                'Rebuild front-end stack leveraging babel, webpack and ECMAScript',
+                'Led technical projects collaborating across marketing, security, devops, and algorithms',
             ],
         },
         {
@@ -29,10 +29,10 @@ const data = {
                 end: 'April 2017',
             },
             skills: [
-                'Build JavaScript/HTML 5 creatives for clients delivering over 4 million impressions',
-                'Lead on-site technical presentations for client tools',
-                'Lead small team meetings discussing creative development triaging issues and outlining solutions',
-                'Lead QA practices implementing new practices and policies',
+                'Built JavaScript/HTML 5 creatives for clients delivering over 4 million impressions',
+                'Led on-site technical presentations for client tools',
+                'Led small team meetings discussing creative development triaging issues and outlining solutions',
+                'Led QA practices implementing new practices and policies',
             ],
         },
         {
@@ -44,10 +44,10 @@ const data = {
                 end: 'April 2015',
             },
             skills: [
-                'Operate the 4500 acre family grain farm',
-                'Machine maintenance with very old and very new equipment',
-                'Run software updates, debug errors, and onboard hired workers',
-                'Take part in large financial and business decisions',
+                'Led operations for my 4500 acre grain farm',
+                'Performed mechanical maintenance on very old equipment',
+                'Executed agriculture software updates, debug errors, and lead hired workers',
+                'Closed large financial and business deals',
             ],
         },
     ],

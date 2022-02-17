@@ -13,15 +13,10 @@ const WorkPage = () => (
                     <a href="https://www.stitchfix.com/"> Stitch Fix </a>
                 </h2>
                 <p styleName="p">
-                    Since starting in 2017, I helped forefront the launch of Kids, Maternity, Plus, and the expansion to
-                    the UK. My initial responsibilities included working directly with marketing & design building AB
-                    tests for our Conversion team. Alongside another engineer and partnership of{' '}
-                    <a styleName="link" href="https://www.carbonfive.com/">
-                        Carbon 5
-                    </a>
-                    , we built a Node.js static site using Jekyll. Later, my team grew and began focusing on a
-                    customized static react app/rails server. During this time I managed an intern and led small
-                    projects using&nbsp;Jira.
+                    Starting in 2017, I helped forefront the launch of <a styleName="link" href="https://www.stitchfix.com/men">Men</a>, <a styleName="link" href="https://www.stitchfix.com/kids">Kids</a> ,<a styleName="link" href="https://www.stitchfix.com/women/plus">Plus</a>, and the expansion to
+                    the <a styleName="link" href="https://www.stitchfix.co.uk">UK</a>. My responsibilities included rewriting front end applications and managing evergreen AB experiments. 
+                    I worked with other front-end focussed engineers to align our designs systems across the site. I currently work on
+                    internal tooling that enables business partners access to user data and ui tweaks. 
                 </p>
             </div>
             <img styleName="sfix-logo" src={sfixLogo} />
@@ -41,6 +36,11 @@ const WorkPage = () => (
                 </p>
             </div>
             <img styleName="ft-logo" src={ftLogo} />
+            <div styleName="side" href="https://www.flashtalking.com/">
+            <h2>Side Project</h2>
+            <a styleName="link code" href="https://nexpisode.com"> Nexpisode </a>
+            </div>
+
         </div>
     </PageContent>
 );
