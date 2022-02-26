@@ -4,8 +4,9 @@ import './styles.module.scss';
 
 const StackPage = () => (
     <PageContent>
-        <div>In order of proficiency..</div>
+        <div>In order of proficiency...</div>
         <ul>
+            <li>Javascript ES6</li>
             <li>React</li>
             <li>Webpack</li>
             <li>SCSS/CSS Modules</li>

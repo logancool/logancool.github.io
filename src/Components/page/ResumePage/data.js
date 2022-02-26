@@ -7,17 +7,17 @@ const data = {
         {
             company: 'Stitch Fix',
             location: 'San Francisco',
-            title: 'Lead Front End Engineer',
+            title: 'Lead Front-End Engineer',
             date: {
                 start: 'April 2017',
                 end: 'Present',
             },
             skills: [
-                'Built the logged-out experience from "/women" only to 100+ pages using a custom webpack/rails hybrid app',
-                'Created a front-end focussed team responsible for visitor signup',
+                'Built the logged-out experience from "/women" only to 100+ pages using a custom webpack/rails hybrid application',
+                'Created a front end focussed team responsible for visitor signups',
                 'Developed internal WYSIWYG editor that automates page development',
-                'Rebuild front-end stack leveraging babel, webpack and ECMAScript',
-                'Led technical projects collaborating across marketing, security, devops, and algorithms',
+                'Rebuild front end stack leveraging babel, webpack and ECMAScript',
+                'Led technical projects collaborating across seo, growth, marketing, security, devops, and algorithms',
             ],
         },
         {
@@ -32,7 +32,7 @@ const data = {
                 'Built JavaScript/HTML 5 creatives for clients delivering over 4 million impressions',
                 'Led on-site technical presentations for client tools',
                 'Led small team meetings discussing creative development triaging issues and outlining solutions',
-                'Led QA practices implementing new practices and policies',
+                'Led QA efforts implementing new practices and policies',
             ],
         },
         {
@@ -60,17 +60,17 @@ const data = {
             to: '2014',
         },
         skills: [
-            '4 years of honours math classes',
-            'Coached a volleyball team',
-            'Volunteered for all orientations for new potential students',
+            'Attended honours computer science and math classes',
+            'Coached recreational volleyball team',
+            'Volunteered for student orientation',
         ],
     },
     skills: {
-        proficient: ['JavaScript ECMAScript 5/6', 'Ruby', 'Git', 'JQuery', 'Wordpress', 'Python', 'Java', 'C++', 'zsh'],
+        proficient: ['JavaScript ECMAScript 6', 'Ruby', 'Git', 'JQuery', 'Wordpress', 'Python', 'Rails', 'zsh', 'Java', 'C++'],
         familiar: ['Go', 'AWS', 'Rails'],
     },
     links: {
-        twitter: 'https://twitter.com/logancooll',
+        twitter: 'https://twitter.com/mrlogancool',
         email: 'contact@logancool.com',
     },
 };

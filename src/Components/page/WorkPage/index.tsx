@@ -14,7 +14,7 @@ const WorkPage = () => (
                 </h2>
                 <p styleName="p">
                     Starting in 2017, I helped forefront the launch of <a styleName="link" href="https://www.stitchfix.com/men">Men</a>, <a styleName="link" href="https://www.stitchfix.com/kids">Kids</a> ,<a styleName="link" href="https://www.stitchfix.com/women/plus">Plus</a>, and the expansion to
-                    the <a styleName="link" href="https://www.stitchfix.co.uk">UK</a>. My responsibilities included rewriting front end applications and managing evergreen AB experiments. 
+                    the <a styleName="link" href="https://www.stitchfix.co.uk">UK</a>. My responsibilities included rewriting front-end applications and managing evergreen AB experiments. 
                     I worked with other front-end focussed engineers to align our designs systems across the site. I currently work on
                     internal tooling that enables business partners access to user data and ui tweaks. 
                 </p>
