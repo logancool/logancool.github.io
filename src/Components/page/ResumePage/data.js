@@ -16,7 +16,7 @@ const data = {
                 'Built the logged-out experience from "/women" only to 100+ pages using a custom webpack/rails hybrid application',
                 'Created a front end focussed team responsible for visitor signups',
                 'Developed internal WYSIWYG editor that automates page development',
-                'Rebuild front end stack leveraging babel, webpack and ECMAScript',
+                'Rebuilt front end stack leveraging babel, webpack and ECMAScript',
                 'Led technical projects collaborating across seo, growth, marketing, security, devops, and algorithms',
             ],
         },
