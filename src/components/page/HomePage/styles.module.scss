@@ -1,21 +1,7 @@
 @import '../../../style/mixins';
 
-.link {
-    @include reset-link;
-}
-
-.h2 {
-    @include reset-h2;
-}
-
-.p {
-    @include reset-p;
-    margin-bottom: 2rem;
-}
-
-.intro-wrapper {
+.wrapper {
     padding: 2rem;
-    position: relative;
     font-family: $font-light;
     font-size: $font-size-p;
 
@@ -24,68 +10,34 @@
     }
 }
 
-.intro {
-    @include reset-p;
-
-    font-size: $font-size-intro;
-    line-height: $height-line-large;
-    position: absolute;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 10%;
-    max-width: $width-ipad;
-    margin: 0 auto;
-
-    @include at-iphone {
-        top: 30%;
-        font-size: $font-size-intro;
+.title {
+    font-size: $font-size-header;
+    @include at-ipad {
+        font-size: $font-size-header-large;
     }
 }
-$intro-top: 40%;
 
-// must match same number of intro messages
-.intro-1 {
-    animation: animate-intro 2s linear normal both;
-    top: $intro-top;
-}
-
-.intro-2 {
-    animation: animate-intro 2s linear normal both;
-    animation-delay: 2s;
-    top: $intro-top;
-}
-
-.intro-facts {
-    @include reset-list;
-    max-width: $width-ipad;
-    margin: 0 auto;
-    text-align: left;
-    padding: 1rem;
-    opacity: 0;
-    animation: animate-intro-facts 2s linear normal both;
-    animation-delay: 6s;
-}
-
-.facts {
+.loves {
     @include reset-list;
     padding: 1.5rem 1rem 1rem;
     max-width: $width-ipad;
     margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
 
     @include at-desktop {
-        padding-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        flex-flow: row;
+
+        > :first-child {
+            padding-left: 0.5rem;
+        }
     }
 }
 
-.facts-title {
-    font-family: $font-regular;
-    font-size: $font-size-header-large;
-    margin-bottom: 0.7rem;
-    padding-left: 1.5rem;
-}
-
-.fact {
+.love {
     @include reset-list;
     font-size: $font-size-li;
     margin-bottom: 1rem;
@@ -93,44 +45,12 @@ $intro-top: 40%;
     @include at-desktop {
         margin-bottom: 0.5rem;
     }
-}
 
-.outro {
-    @include reset-list;
-    position: absolute;
-    font-size: $font-size-icon;
-    bottom: 1rem;
-    right: 15%;
-
-    @include at-desktop {
-        bottom: 0;
+    &::before {
+        content: '♡ ';
     }
-}
-
-// must match same number of outro messages
-.outro-1 {
-    animation: animate-intro 2s linear normal both;
-    animation-delay: 22s;
-}
-
-// animations
-@keyframes animate-intro {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes animate-intro-facts {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+    &::after {
+        content: '   ';
+        white-space: pre;
     }
 }

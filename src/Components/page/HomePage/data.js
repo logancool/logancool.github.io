@@ -1,14 +1,6 @@
 const data = {
-    intro: ['Hi there 👋', 'Logan here.'],
-    title: 'I',
-    facts: [
-        '♡ code',
-        '♡ rockets', 
-        '♡ music',
-        '♡ volleyball',
-        '♡ hiking',
-        '♡ tacos',
-    ],
+    intro: "Hi there 👋, I'm Logan.",
+    loves: ['rockets', 'code', 'music', 'volleyball', 'hiking', 'tacos'],
 };
 
 export default data;
