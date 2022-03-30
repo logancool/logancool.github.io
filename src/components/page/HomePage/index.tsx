@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import cookies from 'browser-cookies';
 import PageContent from '../../layout/PageContent';
 import './styles.module.scss';
 import data from './data';
