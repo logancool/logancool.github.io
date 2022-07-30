@@ -32,10 +32,7 @@ const ResumePage = () => (
                 </div>
                 <br></br>
                 <h3 styleName="download">
-                    <a
-                        target="_blank"
-                        href="https://docs.google.com/document/d/11vk1kPcnjetPnkeR9fRu_1riYHZv3baPyXQElsztLkU/export?format=pdf"
-                    >
+                    <a target="_blank" href="/download">
                         Download Resume
                     </a>
                 </h3>
