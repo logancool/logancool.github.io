@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import data from './data';
 import PageContent from '../../layout/PageContent';
 import './styles.module.scss';

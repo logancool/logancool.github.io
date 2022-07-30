@@ -1,17 +1,19 @@
-import React, { useState, useEffect, useLayoutEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './styles.module.scss';
 
 const Header = () => {
     const pages = ['me', 'work', 'resume', 'stack'];
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const [activePage, setActive] = useState('me');
 
     // if user refreshes page update active state
     useEffect(() => {
-        if (history.location.pathname !== '/') {
-            setActive(history.location.pathname.replace('/', ''));
+        const location = useLocation();
+        console.log(location);
+        if (location !== '/') {
+            setActive(location.replace('/', ''));
         }
     }, []);
 
@@ -25,7 +27,7 @@ const Header = () => {
                                 styleName="link"
                                 onClick={() => {
                                     setActive(page);
-                                    history.push(`/${page}`);
+                                    navigate(`/${page}`);
                                 }}
                                 to={page === 'me' ? '/' : `/${page}`}
                             >
