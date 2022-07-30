@@ -9,13 +9,12 @@ const Header = () => {
     const [activePage, setActive] = useState('me');
 
     // if user refreshes page update active state
+    const {pathname } = useLocation();
     useEffect(() => {
-        const location = useLocation();
-        console.log(location);
-        if (location !== '/') {
-            setActive(location.replace('/', ''));
+        if (pathname !== '/') {
+            setActive(pathname.replace('/', ''));
         }
-    }, []);
+    }, [pathname]);
 
     return (
         <header styleName="placeholder">
