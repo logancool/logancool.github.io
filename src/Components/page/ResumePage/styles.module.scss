@@ -18,7 +18,6 @@
 }
 
 .section-date {
-
     font-family: $font-regular;
     @include reset-h5;
 }
@@ -43,4 +42,17 @@
 }
 
 .skill {
+}
+
+.download {
+    @include reset-h3;
+
+    display: table; //for underline width
+    margin-bottom: 0.5rem;
+
+    @include underline-title;
+
+    a {
+        @include reset-link;
+    }
 }
