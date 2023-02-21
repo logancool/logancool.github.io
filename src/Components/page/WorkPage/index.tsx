@@ -2,12 +2,26 @@ import React from 'react';
 import PageContent from '../../layout/PageContent';
 import ftLogo from './images/ft_logo.png';
 import sfixLogo from './images/sfix_logo.png';
+import zapposLogo from './images/zappos_logo.png';
 
 import './styles.module.scss';
 
 const WorkPage = () => (
     <PageContent>
         <div styleName="work">
+             <div styleName="zappos" href="https://www.zappos.com/">
+                <h2 styleName="workplace">
+                    <a href="https://www.zappos.com/">Zappos</a>
+                </h2>
+                <p styleName="p">
+                    I am currently working on the&nbsp;
+                    <a styleName="link" href="https://www.zappos.com/c/zapposatwork">
+                        Zappos at Work
+                    </a>
+                    &nbsp;team.
+                </p>
+            </div>
+            <img styleName="zappos-logo" src={zapposLogo} />
             <div styleName="sfix" href="https://www.stitchfix.com/">
                 <h2 styleName="workplace">
                     <a href="https://www.stitchfix.com/"> Stitch Fix </a>

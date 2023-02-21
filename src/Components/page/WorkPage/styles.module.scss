@@ -12,13 +12,11 @@
 
     // since the page isn't large enough to fill 100% height
     @include at-ipad {
-        height: $height-page-min-large;
-        max-height: 52rem;
-        align-content: space-around;
+
         align-items: center;
-        grid-row: 2;
+        grid-row: 3;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 'sfix sfix sfix-logo' 'ft-logo ft ft' 'side side side';
+        grid-template-areas: 'zappos zappos zappos-logo' 'sfix-logo sfix sfix' 'ft ft ft-logo' 'side side side';
     }
 
     @include at-desktop {
@@ -49,7 +47,8 @@
 }
 
 .sfix,
-.ft {
+.ft,
+.zappos {
     @include reset-link;
     padding: 1rem;
     max-width: 48rem;
@@ -61,12 +60,31 @@
         grid-area: sfix;
     }
 }
+
+.zappos {
+    @include at-ipad {
+        min-height: 10rem;
+        grid-area: zappos;
+    }
+}
+
 .sfix-logo {
     display: none;
+
     @include at-ipad {
         display: block;
         width: 100%;
         grid-area: sfix-logo;
+    }
+}
+
+.zappos-logo {
+    display: none;
+
+    @include at-ipad {
+        display: block;
+        width: 100%;
+        grid-area: zappos-logo;
     }
 }
 
@@ -78,6 +96,7 @@
 
 .ft-logo {
     display: none;
+
     @include at-ipad {
         display: block;
         width: 100%;
@@ -87,10 +106,12 @@
 
 .side {
     padding: 1rem;
+
     h2 {
         @include reset-h2;
         margin-bottom: 0.5rem;
     }
+
     @include at-ipad {
         grid-area: side;
     }
