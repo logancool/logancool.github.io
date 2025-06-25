@@ -18,7 +18,7 @@ const ResumePage = () => (
                         <div key={job.company}>
                             <h3 styleName="section-title">
                                 <strong>{job.company}</strong>
-                                {`, ${job.location} \u2014 ${job.title}`}
+                                {` \u2014 ${job.title}`}
                             </h3>
                             <h5 styleName="section-date">{`${job.date.start} \u2014 ${job.date.end}`}</h5>
 

@@ -26,13 +26,11 @@ $width-underline-link: 3px;
 //heights
 $height-line: 1.5rem;
 $height-line-large: 1.75rem;
-$height-header: calc(#{$height-line} + #{$padding-nav}* 2); // note doesn't work on mobile
-$height-header-large: calc(#{$height-line-large} + #{$padding-nav}* 2);
-$height-footer: calc(#{$padding-button}* 2 + #{$size-footer-icon});
+$height-header: calc(#{$height-line} + #{$padding-nav}* 1.5); // reduced height
+$height-header-large: calc(#{$height-line-large} + #{$padding-nav}* 1.5); // reduced height
+$height-footer: calc(#{$height-line} + #{$padding-nav}* 1.5); // match header height
 $height-page-min: calc(100vh - (#{$height-header} + #{$height-footer} + 2 * #{$padding-page}) + #{$padding-footer});
-$height-page-min-large: calc(
-    100vh - (#{$height-header-large} + #{$height-footer} + 2 * #{$padding-page} + #{$padding-footer})
-);
+$height-page-min-large: calc(100vh - (#{$height-header-large} + #{$height-footer} + 2 * #{$padding-page} + #{$padding-footer}));
 
 //spacing
 $space-below: 2rem;

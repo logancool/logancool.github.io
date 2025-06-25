@@ -16,7 +16,7 @@
         align-items: center;
         grid-row: 3;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 'zappos zappos zappos-logo' 'sfix-logo sfix sfix' 'ft ft ft-logo' 'side side side';
+        grid-template-areas: 'amazon-logo amazon amazon' 'zappos zappos zappos-logo' 'zaw-demo zaw-demo zaw-demo' 'sfix-logo sfix sfix' 'ft ft ft-logo' 'side side side';
     }
 
     @include at-desktop {
@@ -46,6 +46,7 @@
     @include underline-link;
 }
 
+.amazon,
 .sfix,
 .ft,
 .zappos {
@@ -61,6 +62,13 @@
     }
 }
 
+.amazon {
+    @include at-ipad {
+        min-height: 10rem;
+        grid-area: amazon;
+    }
+}
+
 .zappos {
     @include at-ipad {
         min-height: 10rem;
@@ -73,8 +81,26 @@
 
     @include at-ipad {
         display: block;
-        width: 100%;
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
         grid-area: sfix-logo;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+.amazon-logo {
+    display: none;
+
+    @include at-ipad {
+        display: block;
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        grid-area: amazon-logo;
+        justify-self: center;
+        align-self: center;
     }
 }
 
@@ -83,8 +109,12 @@
 
     @include at-ipad {
         display: block;
-        width: 100%;
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
         grid-area: zappos-logo;
+        justify-self: center;
+        align-self: center;
     }
 }
 
@@ -99,8 +129,12 @@
 
     @include at-ipad {
         display: block;
-        width: 100%;
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
         grid-area: ft-logo;
+        justify-self: center;
+        align-self: center;
     }
 }
 
@@ -115,6 +149,29 @@
     @include at-ipad {
         grid-area: side;
     }
+}
+
+.zawDemo {
+    padding: 1rem;
+    text-align: center;
+    
+    @include at-ipad {
+        grid-area: zaw-demo;
+    }
+}
+
+.zawImage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.zawCaption {
+    @include reset-p;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
 }
 
 .link .code {

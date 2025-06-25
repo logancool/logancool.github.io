@@ -6,4 +6,5 @@
     background-color: white;
     max-width: 52rem;
     margin: $padding-page auto;
+    padding-bottom: calc(#{$height-footer} + 2rem);
 }

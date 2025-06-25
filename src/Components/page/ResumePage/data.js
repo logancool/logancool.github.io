@@ -5,28 +5,40 @@ const data = {
     },
     experience: [
         {
-            company: 'Stitch Fix',
-            location: 'San Francisco',
-            title: 'Lead Front-End Engineer',
+            company: 'Amazon',
+            title: 'SDE II',
             date: {
-                start: 'April 2017',
+                start: '2023',
                 end: 'Present',
             },
             skills: [
-                'Built the logged-out experience from "/women" only to 100+ pages using a custom webpack/rails hybrid application',
+                'Built Next.js workwear shopping site with employee onboarding',
+                'Built sales intake site zapposatwork.com and support partners onboarding',
+                'Refactored authentication and framework for partner subsidy management CMS',
+                'Improve /returns flow and order tracking for zappos.com',
+            ],
+        },
+        {
+            company: 'Stitch Fix',
+            title: 'Lead Front-End Engineer',
+            date: {
+                start: '2017',
+                end: '2023',
+            },
+            skills: [
+                'Built logged-out stitchfix.com from /women to 100+ pages',
                 'Created a front end focussed team responsible for visitor signups',
                 'Developed internal WYSIWYG editor that automates page development',
-                'Rebuilt front end stack leveraging babel, webpack and ECMAScript',
+                'Rebuilt front end stack leveraging babel, webpack and ECMAScript 6',
                 'Led technical projects collaborating across seo, growth, marketing, security, devops, and algorithms',
             ],
         },
         {
             company: 'Flashtalking',
-            location: 'San Francisco',
-            title: 'Systems Analyst',
+            title: 'Software Engineer',
             date: {
-                start: 'May 2015',
-                end: 'April 2017',
+                start: '2015',
+                end: '2017',
             },
             skills: [
                 'Built JavaScript/HTML 5 creatives for clients delivering over 4 million impressions',
@@ -37,7 +49,6 @@ const data = {
         },
         {
             company: 'JKLM Farms',
-            location: 'Saskatchewan, Canada',
             title: 'Farmer',
             date: {
                 start: 'April 2014',
@@ -54,24 +65,40 @@ const data = {
     education: {
         college: 'University of Saskatchewan',
         location: 'Saskatchewan, Canada',
-        degree: 'Computer Science, minor in Applied Mathematics',
+        degree: 'B.Sc Computer Science',
         year: {
             from: '2010',
             to: '2014',
         },
-        skills: [
-            'Attended honours computer science and math classes',
-            'Coached recreational volleyball team',
-            'Volunteered for student orientation',
-        ],
     },
     skills: {
-        proficient: ['JavaScript ECMAScript 6', 'Ruby', 'Git', 'JQuery', 'Wordpress', 'Python', 'Rails', 'zsh', 'Java', 'C++'],
-        familiar: ['Go', 'AWS', 'Rails'],
+        stack: [
+            'JavaScript',
+            'Next.js',
+            'Node.js',
+            'Tailwind CSS',
+            'React',
+            'SCSS/CSS Modules',
+            'Amazon DynamoDB',
+            'Amazon Cognito',
+            'Amazon Route53',
+            'AWS Lambda',
+            'React Testing Library',
+            'Jest',
+            'DataDog',
+            'Cloudinary',
+            'Percy',
+            'Storybook',
+            'Babel',
+            'Cloudfront',
+            'GraphQL',
+            'Ruby'
+        ]
     },
-    links: {
-        twitter: 'https://twitter.com/mrlogancool',
-        email: 'contact@logancool.com',
+    contact: {
+        phone: '(628) 444-9264',
+        email: 'coollogan88@gmail.com',
+        location: 'San Diego, CA',
     },
 };
 

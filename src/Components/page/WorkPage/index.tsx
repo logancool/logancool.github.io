@@ -1,71 +1,64 @@
 import React from 'react';
 import PageContent from '../../layout/PageContent';
+import amazonLogo from './images/amazon_logo.png';
 import ftLogo from './images/ft_logo.png';
 import sfixLogo from './images/sfix_logo.png';
 import zapposLogo from './images/zappos_logo.png';
+import zawShop from './images/zaw_shop.png';
 
 import './styles.module.scss';
 
 const WorkPage = () => (
     <PageContent>
         <div styleName="work">
-             <div styleName="zappos" href="https://www.zappos.com/">
+            <div styleName="amazon" href="https://www.amazon.com/">
                 <h2 styleName="workplace">
-                    <a href="https://www.zappos.com/">Zappos</a>
+                    <a href="https://www.amazon.com/">Amazon</a>
                 </h2>
                 <p styleName="p">
-                    I am currently working on the&nbsp;
-                    <a styleName="link" href="https://www.zappos.com/c/zapposatwork">
-                        Zappos at Work
+                    Since 2023, I've built a Next.js workwear shopping site with employee onboarding and the sales
+                    intake site&nbsp;
+                    <a styleName="link" href="https://zapposatwork.com">
+                        zapposatwork.com
                     </a>
-                    &nbsp;team.
+                    &nbsp;with partner onboarding support. I refactored authentication and framework for partner subsidy
+                    management CMS and improved /returns flow and order tracking for zappos.com.
                 </p>
             </div>
-            <img styleName="zappos-logo" src={zapposLogo} />
+            <img styleName="amazon-logo" src={amazonLogo} alt="Amazon logo" />
+            <img styleName="zappos-logo" src={zapposLogo} alt="Zappos logo" />
+            <div styleName="zawDemo">
+                <img src={zawShop} alt="workwear shopping experience for a demo customer" styleName="zawImage" />
+                <p styleName="zawCaption">Workwear shopping experience for a demo customer</p>
+            </div>
             <div styleName="sfix" href="https://www.stitchfix.com/">
                 <h2 styleName="workplace">
                     <a href="https://www.stitchfix.com/"> Stitch Fix </a>
                 </h2>
                 <p styleName="p">
-                    Starting in 2017, I helped forefront the launch of{' '}
-                    <a styleName="link" href="https://www.stitchfix.com/men">
-                        Men
+                    From 2017-2023, I built logged-out&nbsp;
+                    <a styleName="link" href="https://www.stitchfix.com">
+                        stitchfix.com
                     </a>
-                    ,{' '}
-                    <a styleName="link" href="https://www.stitchfix.com/kids">
-                        Kids
-                    </a>{' '}
-                    ,
-                    <a styleName="link" href="https://www.stitchfix.com/women/plus">
-                        Plus
-                    </a>
-                    , and the expansion to the{' '}
-                    <a styleName="link" href="https://www.stitchfix.co.uk">
-                        UK
-                    </a>
-                    . My responsibilities included rewriting front-end applications and managing evergreen AB
-                    experiments. I worked with other front-end focussed engineers to align our designs systems across
-                    the site. I currently work on internal tooling that enables business partners access to user data
-                    and ui tweaks.
+                    &nbsp;from /women to 100+ pages. I created a front end focussed team responsible for visitor
+                    signups, developed internal WYSIWYG editor that automates page development, rebuilt front end stack
+                    leveraging babel, webpack and ECMAScript 6, and led technical projects collaborating across seo,
+                    growth, marketing, security, devops, and algorithms.
                 </p>
             </div>
-            <img styleName="sfix-logo" src={sfixLogo} />
+            <img styleName="sfix-logo" src={sfixLogo} alt="Stitch Fix logo" />
             <div styleName="ft" href="https://www.flashtalking.com/">
                 <h2 styleName="workplace">
                     <a href="https://www.flashtalking.com/">Flashtalking</a>
                 </h2>
                 <p styleName="p">
-                    Starting with ActionScript 2, I designed and built advertisement creatives for large and small
-                    businesses including clients such as Hulu, Gap, and CBS. I worked with our internal developers in
-                    Leeds and New York directly, to help improve internal web app tooling. After HTML began dominating
-                    the industry, I worked mostly in vanilla CSS using a JavaScript webGL framework,&nbsp;
-                    <a styleName="link" href="https://threejs.org/">
-                        Three.js
-                    </a>
-                    .
+                    From 2015-2017, I built JavaScript/HTML 5 creatives for clients delivering over 4 million
+                    impressions. I led on-site technical presentations for client tools, led small team meetings
+                    discussing creative development triaging issues and outlining solutions, and led QA efforts
+                    implementing new practices and policies.
                 </p>
             </div>
-            <img styleName="ft-logo" src={ftLogo} />
+            <img styleName="ft-logo" src={ftLogo} alt="Flashtalking logo" />
             {/* <div styleName="side" href="https://www.flashtalking.com/">
             <h2>Side Project</h2>
             <a styleName="link code" href="https://nexpisode.com"> Nexpisode </a>
