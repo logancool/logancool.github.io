@@ -256,15 +256,6 @@ const StackPage = () => {
                                 </button>
                             </div>
                         )}
-                        
-                        {gameActive && currentPiece < technologies.length && (
-                            <div styleName="gameInfo">
-                                <p>Use ← → arrow keys to move, ↓ to drop faster</p>
-                                <p>
-                                    Dropping: <strong>{technologies[currentPiece].name}</strong>
-                                </p>
-                            </div>
-                        )}
 
                         <div styleName="tetrisBoard">
                             {board.map((row, rowIndex) => (
@@ -303,6 +294,15 @@ const StackPage = () => {
                                 </div>
                             ))}
                         </div>
+                        
+                        {gameActive && currentPiece < technologies.length && (
+                            <div styleName="gameInfo">
+                                <p>Use ← → arrow keys to move, ↓ to drop faster</p>
+                                <p>
+                                    Dropping: <strong>{technologies[currentPiece].name}</strong>
+                                </p>
+                            </div>
+                        )}
                     </>
                 )}
             </div>
