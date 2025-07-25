@@ -28,25 +28,34 @@
             var segmentCount = 0;
 
             var l = window.location;
-            l.replace(
-                l.protocol +
-                    '//' +
-                    l.hostname +
-                    (l.port ? ':' + l.port : '') +
-                    l.pathname
-                        .split('/')
-                        .slice(0, 1 + segmentCount)
-                        .join('/') +
-                    '/?p=/' +
-                    l.pathname
-                        .slice(1)
-                        .split('/')
-                        .slice(segmentCount)
-                        .join('/')
-                        .replace(/&/g, '~and~') +
-                    (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-                    l.hash,
-            );
+            
+            // Check if this is a nexpisode route
+            if (l.pathname.indexOf('/nexpisode') === 0) {
+                // For nexpisode routes, redirect to the nexpisode app with hash routing
+                var nexpisodePath = l.pathname.replace('/nexpisode', '');
+                l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/nexpisode/#' + nexpisodePath);
+            } else {
+                // Original redirect logic for other routes
+                l.replace(
+                    l.protocol +
+                        '//' +
+                        l.hostname +
+                        (l.port ? ':' + l.port : '') +
+                        l.pathname
+                            .split('/')
+                            .slice(0, 1 + segmentCount)
+                            .join('/') +
+                        '/?p=/' +
+                        l.pathname
+                            .slice(1)
+                            .split('/')
+                            .slice(segmentCount)
+                            .join('/')
+                            .replace(/&/g, '~and~') +
+                        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                        l.hash,
+                );
+            }
         </script>
         <style>
             .wrapper {
