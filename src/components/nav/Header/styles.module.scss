@@ -15,6 +15,7 @@
     background-color: $color-primary;
     font: $font-header;
     color: $color-secondary;
+    z-index: 1000; // Ensure header stays on top of all content
 
     @include at-ipad {
         margin: 0 auto;

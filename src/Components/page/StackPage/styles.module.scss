@@ -1,3 +1,175 @@
-.stack {
-    //TODO: add styles
+.stackContainer {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stackTitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stackDescription {
+    margin-bottom: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.controlBtn {
+    padding: 0.5rem 1rem;
+    background: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    
+    &:hover {
+        background: #3730A3;
+    }
+}
+
+.speedControl {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.gameInfo {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #f0f0f0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    
+    p {
+        margin: 0.25rem 0;
+    }
+}
+
+.tetrisBoard {
+    border: 3px solid #333;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    display: inline-block;
+    padding: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.boardRow {
+    display: flex;
+    height: 50px;
+}
+
+.boardCell {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.1;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 1px;
+    transition: all 0.2s ease;
+}
+
+.techList {
+    text-align: center;
+    max-width: 500px;
+}
+
+.techList h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.simpleList {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cellText {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    word-break: break-word;
+    hyphens: auto;
+    font-size: 0.75rem;
+    padding: 2px;
+    color: white;
+}
+
+.fallingPiece {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255,255,255,0.6);
+    box-shadow: 0 0 15px rgba(255,255,0,0.7), inset 0 0 10px rgba(255,255,255,0.2);
+    animation: pulse 1s infinite;
+    border-radius: 6px;
+    background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 100%);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+@media (max-width: 768px) {
+    .boardCell {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .boardRow {
+        height: 40px;
+    }
+    
+    .cellText {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .boardCell {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .boardRow {
+        height: 35px;
+    }
+    
+    .cellText {
+        font-size: 0.6rem;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }

@@ -72,27 +72,48 @@ const data = {
         },
     },
     skills: {
-        stack: [
-            'JavaScript',
+        languages: [
+            'TypeScript',
+            'React',
             'Next.js',
             'Node.js',
-            'Tailwind CSS',
-            'React',
-            'SCSS/CSS Modules',
-            'Amazon DynamoDB',
-            'Amazon Cognito',
-            'Amazon Route53',
-            'AWS Lambda',
-            'React Testing Library',
+            'HTML5',
+            'CSS3',
+            'SCSS',
+            'Tailwind CSS'
+        ],
+        testing: [
             'Jest',
-            'DataDog',
-            'Cloudinary',
-            'Percy',
+            'React Testing Library',
             'Storybook',
+            'Percy',
             'Babel',
-            'Cloudfront',
+            'Webpack'
+        ],
+        cloud: [
+            'AWS Lambda',
+            'DynamoDB',
+            'Cognito',
+            'Route53',
+            'CloudFront',
+            'Firebase Auth',
+            'Firestore',
             'GraphQL',
-            'Ruby'
+            'REST'
+        ],
+        monitoring: [
+            'DataDog',
+            'Cloudinary'
+        ],
+        other: [
+            'WYSIWYG editors',
+            'CMS integration',
+            'SEO optimization',
+            'Accessibility',
+            'Performance tuning',
+            'Google Maps API',
+            'React Router',
+            'TV Database API'
         ]
     },
     contact: {

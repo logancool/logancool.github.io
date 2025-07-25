@@ -1,11 +1,5 @@
 import React from 'react';
 import PageContent from '../../layout/PageContent';
-import amazonLogo from './images/amazon_logo.png';
-import ftLogo from './images/ft_logo.png';
-import sfixLogo from './images/sfix_logo.png';
-import zapposLogo from './images/zappos_logo.png';
-import zawShop from './images/zaw_shop.png';
-
 import './styles.module.scss';
 
 const WorkPage = () => (
@@ -25,10 +19,10 @@ const WorkPage = () => (
                     management CMS and improved /returns flow and order tracking for zappos.com.
                 </p>
             </div>
-            <img styleName="amazon-logo" src={amazonLogo} alt="Amazon logo" />
-            <img styleName="zappos-logo" src={zapposLogo} alt="Zappos logo" />
+            <img styleName="amazon-logo" src="/images/amazon_logo.png" alt="Amazon logo" />
+            <img styleName="zappos-logo" src="/images/zappos_logo.png" alt="Zappos logo" />
             <div styleName="zawDemo">
-                <img src={zawShop} alt="workwear shopping experience for a demo customer" styleName="zawImage" />
+                <img src="/images/zaw_shop.png" alt="workwear shopping experience for a demo customer" styleName="zawImage" />
                 <p styleName="zawCaption">Workwear shopping experience for a demo customer</p>
             </div>
             <div styleName="sfix" href="https://www.stitchfix.com/">
@@ -46,7 +40,7 @@ const WorkPage = () => (
                     growth, marketing, security, devops, and algorithms.
                 </p>
             </div>
-            <img styleName="sfix-logo" src={sfixLogo} alt="Stitch Fix logo" />
+            <img styleName="sfix-logo" src="/images/sfix_logo.png" alt="Stitch Fix logo" />
             <div styleName="ft" href="https://www.flashtalking.com/">
                 <h2 styleName="workplace">
                     <a href="https://www.flashtalking.com/">Flashtalking</a>
@@ -58,7 +52,7 @@ const WorkPage = () => (
                     implementing new practices and policies.
                 </p>
             </div>
-            <img styleName="ft-logo" src={ftLogo} alt="Flashtalking logo" />
+            <img styleName="ft-logo" src="/images/ft_logo.png" alt="Flashtalking logo" />
             {/* <div styleName="side" href="https://www.flashtalking.com/">
             <h2>Side Project</h2>
             <a styleName="link code" href="https://nexpisode.com"> Nexpisode </a>

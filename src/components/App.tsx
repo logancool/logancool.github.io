@@ -4,6 +4,7 @@ import HomePage from './page/HomePage';
 import ResumePage from './page/ResumePage';
 import StackPage from './page/StackPage';
 import WorkPage from './page/WorkPage';
+import ProjectsPage from './page/ProjectsPage';
 import PageNotFound from './page/PageNotFound';
 import Header from './nav/Header';
 import Footer from './nav/Footer';
@@ -18,6 +19,7 @@ const App = () => (
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="work" element={<WorkPage />} />
+                    <Route path="projects" element={<ProjectsPage />} />
                     <Route path="resume" element={<ResumePage />} />
                     <Route path="download" element={<RedirectPage />} />
                     <Route path="stack" element={<StackPage />} />

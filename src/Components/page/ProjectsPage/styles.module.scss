@@ -1,0 +1,80 @@
+@import '../../../style/mixins';
+
+.projects {
+    padding: 1rem;
+    
+    @include at-ipad {
+        padding: 0;
+    }
+}
+
+.projectTitle {
+    @include reset-h2;
+    display: table;
+    margin-bottom: 1.5rem;
+    @include underline-title;
+}
+
+.project {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    
+    &:last-child {
+        border-bottom: none;
+    }
+    
+    h3 {
+        margin-bottom: 1rem;
+        
+        a {
+            @include reset-link;
+            @include underline-link;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.projectImage {
+    margin: 1rem 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.description {
+    @include reset-p;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.loginInfo {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-left: 3px solid #4F46E5;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.techStack {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    a {
+        @include reset-link;
+        @include underline-link;
+        display: inline-block;
+        padding: 0.5rem 0;
+    }
+}

@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './styles.module.scss';
 
 const Header = () => {
-    const pages = ['me', 'work', 'resume', 'stack'];
+    const pages = ['me', 'work', 'resume', 'projects', 'stack'];
     const navigate = useNavigate();
 
     const [activePage, setActive] = useState('me');

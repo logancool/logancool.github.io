@@ -11,6 +11,7 @@
     padding: $padding-nav 0;
     transform: translateY(100%);
     transition: transform 0.3s ease;
+    z-index: 1000; // Ensure footer stays on top of content
     
     &.visible {
         transform: translateY(0);
