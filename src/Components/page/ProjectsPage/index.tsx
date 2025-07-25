@@ -86,7 +86,7 @@ const ProjectsPage = () => {
                     <strong>Tech Stack:</strong> React, AWS Cognito, React Router, TV Database API
                 </div>
                 <div styleName="links">
-                    <a href="http://www.logan.cool/nexpisode/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://www.logan.cool/nexpisode/my-shows" target="_blank" rel="noopener noreferrer">
                         Live Demo
                     </a>
                     <a href="https://github.com/logancool/nexpisode" target="_blank" rel="noopener noreferrer">

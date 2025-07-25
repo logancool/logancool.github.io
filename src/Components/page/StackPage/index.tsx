@@ -44,7 +44,7 @@ const technologies = [
   { name: 'TypeScript', level: 1, color: '#3178C6', width: 2 },
 ];
 
-const BOARD_WIDTH = 4;
+const BOARD_WIDTH = 6;
 const BOARD_HEIGHT = 8;
 const BLOCK_SIZE = 50;
 
@@ -215,6 +215,14 @@ const StackPage = () => {
           )}
         </div>
 
+        {!showList && (
+          <div styleName="mobileControls">
+            <button styleName="mobileBtn" onClick={() => movePiece(-1)}>← Left</button>
+            <button styleName="mobileBtn" onClick={() => dropPiece()}>↓ Drop</button>
+            <button styleName="mobileBtn" onClick={() => movePiece(1)}>Right →</button>
+          </div>
+        )}
+        
         {showList ? (
           <div styleName="techList">
             <h3>In order of proficiency</h3>
@@ -256,7 +264,7 @@ const StackPage = () => {
                       styleName="fallingPiece"
                       style={{ 
                         backgroundColor: technologies[currentPiece].color,
-                        width: technologies[currentPiece].width === 2 ? '202px' : '100px'
+                        width: technologies[currentPiece].width === 2 ? '282px' : '140px'
                       }}
                     >
                       {colIndex === piecePosition.x && (
