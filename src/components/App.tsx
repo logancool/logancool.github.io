@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import HomePage from './page/HomePage';
 import ResumePage from './page/ResumePage';
 import StackPage from './page/StackPage';
@@ -11,8 +11,11 @@ import Footer from './nav/Footer';
 import './app.module.scss';
 import RedirectPage from './page/RedirectPage';
 
-const App = () => (
-    <Router>
+const AppContent = () => {
+    const location = useLocation();
+    const hideFooter = location.pathname === '/stack';
+    
+    return (
         <>
             <Header />
             <div styleName="page">
@@ -26,8 +29,14 @@ const App = () => (
                     <Route element={<PageNotFound />} />
                 </Routes>
             </div>
-            <Footer />
+            {!hideFooter && <Footer />}
         </>
+    );
+};
+
+const App = () => (
+    <Router>
+        <AppContent />
     </Router>
 );
 

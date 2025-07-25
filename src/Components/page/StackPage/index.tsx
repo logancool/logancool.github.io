@@ -3,45 +3,45 @@ import PageContent from '../../layout/PageContent';
 import './styles.module.scss';
 
 const technologies = [
-    // Least proficient first (bottom of stack)
-    { name: 'Google Maps API', level: 8, color: '#4285F4', width: 1 },
-    { name: 'Performance tuning', level: 8, color: '#F44336', width: 1 },
-    { name: 'Accessibility', level: 8, color: '#9C27B0', width: 1 },
-
-    { name: 'SEO optimization', level: 7, color: '#38E54D', width: 1 },
-    { name: 'CMS integration', level: 7, color: '#FF6B6B', width: 1 },
-    { name: 'WYSIWYG editors', level: 7, color: '#00C49A', width: 1 },
-
-    { name: 'Firebase', level: 6, color: '#FFCA28', width: 1 },
-    { name: 'Cloudinary', level: 6, color: '#3448C5', width: 1 },
-    { name: 'DataDog', level: 6, color: '#632CA6', width: 1 },
-    { name: 'REST', level: 6, color: '#0096C7', width: 1 },
-
-    { name: 'GraphQL', level: 5, color: '#E10098', width: 1 },
-    { name: 'CloudFront', level: 5, color: '#FF9900', width: 1 },
-    { name: 'Route53', level: 5, color: '#9D7EE2', width: 1 },
-    { name: 'Cognito', level: 5, color: '#D94D4D', width: 1 },
-
-    { name: 'DynamoDB', level: 4, color: '#4053D6', width: 1 },
-    { name: 'AWS Lambda', level: 4, color: '#FF9900', width: 1 },
-    { name: 'Webpack', level: 4, color: '#8DD6F9', width: 1 },
-    { name: 'Babel', level: 4, color: '#F9DC3E', width: 1 },
-
-    { name: 'Percy', level: 3, color: '#9E66BF', width: 1 },
-    { name: 'Storybook', level: 3, color: '#FF4785', width: 1 },
-    { name: 'React Testing Library', level: 3, color: '#E33332', width: 1 },
-    { name: 'Jest', level: 3, color: '#C21325', width: 1 },
-
-    { name: 'Tailwind CSS', level: 2, color: '#06B6D4', width: 1 },
-    { name: 'SCSS', level: 2, color: '#CC6699', width: 1 },
-    { name: 'CSS3', level: 2, color: '#1572B6', width: 1 },
-    { name: 'HTML5', level: 2, color: '#E34F26', width: 1 },
-
-    // Most proficient last (top of stack)
-    { name: 'Node.js', level: 1, color: '#339933', width: 1 },
-    { name: 'Next.js', level: 1, color: '#000000', width: 1 },
-    { name: 'React', level: 1, color: '#61DAFB', width: 2 },
+    // Most proficient first (drop first, end up on bottom)
     { name: 'TypeScript', level: 1, color: '#3178C6', width: 2 },
+    { name: 'React', level: 1, color: '#61DAFB', width: 2 },
+    { name: 'Next.js', level: 1, color: '#000000', width: 1 },
+    { name: 'Node.js', level: 1, color: '#339933', width: 1 },
+
+    { name: 'HTML5', level: 2, color: '#E34F26', width: 1 },
+    { name: 'CSS3', level: 2, color: '#1572B6', width: 1 },
+    { name: 'SCSS', level: 2, color: '#CC6699', width: 1 },
+    { name: 'Tailwind CSS', level: 2, color: '#06B6D4', width: 1 },
+
+    { name: 'Jest', level: 3, color: '#C21325', width: 1 },
+    { name: 'React Testing Library', level: 3, color: '#E33332', width: 1 },
+    { name: 'Storybook', level: 3, color: '#FF4785', width: 1 },
+    { name: 'Percy', level: 3, color: '#9E66BF', width: 1 },
+
+    { name: 'Babel', level: 4, color: '#F9DC3E', width: 1 },
+    { name: 'Webpack', level: 4, color: '#8DD6F9', width: 1 },
+    { name: 'AWS Lambda', level: 4, color: '#FF9900', width: 1 },
+    { name: 'DynamoDB', level: 4, color: '#4053D6', width: 1 },
+
+    { name: 'Cognito', level: 5, color: '#D94D4D', width: 1 },
+    { name: 'Route53', level: 5, color: '#9D7EE2', width: 1 },
+    { name: 'CloudFront', level: 5, color: '#FF9900', width: 1 },
+    { name: 'GraphQL', level: 5, color: '#E10098', width: 1 },
+
+    { name: 'REST', level: 6, color: '#0096C7', width: 1 },
+    { name: 'DataDog', level: 6, color: '#632CA6', width: 1 },
+    { name: 'Cloudinary', level: 6, color: '#3448C5', width: 1 },
+    { name: 'Firebase', level: 6, color: '#FFCA28', width: 1 },
+
+    { name: 'WYSIWYG editors', level: 7, color: '#00C49A', width: 1 },
+    { name: 'CMS integration', level: 7, color: '#FF6B6B', width: 1 },
+    { name: 'SEO optimization', level: 7, color: '#38E54D', width: 1 },
+
+    // Least proficient last (drop last, end up on top)
+    { name: 'Accessibility', level: 8, color: '#9C27B0', width: 1 },
+    { name: 'Performance tuning', level: 8, color: '#F44336', width: 1 },
+    { name: 'Google Maps API', level: 8, color: '#4285F4', width: 1 },
 ];
 
 const BOARD_WIDTH = 4;
@@ -201,7 +201,7 @@ const StackPage = () => {
             <div styleName="stackContainer">
                 <h2 styleName="stackTitle">Tech Stack Tetris</h2>
                 <p styleName="stackDescription">
-                    <i>Technologies falling by proficiency - least skilled drop first, most skilled on top</i>
+                    <i>Technologies falling by proficiency - most skilled drop first, least skilled on top</i>
                 </p>
 
                 <div styleName="controls">
@@ -232,31 +232,31 @@ const StackPage = () => {
                     )}
                 </div>
 
-                {!showList && (
-                    <div styleName="mobileControls">
-                        <button styleName="mobileBtn" onClick={() => movePiece(-1)}>
-                            ← Left
-                        </button>
-                        <button styleName="mobileBtn" onClick={() => dropPiece()}>
-                            ↓ Drop
-                        </button>
-                        <button styleName="mobileBtn" onClick={() => movePiece(1)}>
-                            Right →
-                        </button>
-                    </div>
-                )}
-
                 {showList ? (
                     <div styleName="techList">
                         <h3>In order of proficiency</h3>
                         <ol styleName="simpleList">
-                            {[...technologies].reverse().map((tech, index) => (
+                            {technologies.map((tech, index) => (
                                 <li key={tech.name}>{tech.name}</li>
                             ))}
                         </ol>
                     </div>
                 ) : (
                     <>
+                        {!showList && (
+                            <div styleName="mobileControls">
+                                <button styleName="mobileBtn" onClick={() => movePiece(-1)}>
+                                    ← Left
+                                </button>
+                                <button styleName="mobileBtn" onClick={() => dropPiece()}>
+                                    ↓ Drop
+                                </button>
+                                <button styleName="mobileBtn" onClick={() => movePiece(1)}>
+                                    Right →
+                                </button>
+                            </div>
+                        )}
+                        
                         {gameActive && currentPiece < technologies.length && (
                             <div styleName="gameInfo">
                                 <p>Use ← → arrow keys to move, ↓ to drop faster</p>
