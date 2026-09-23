@@ -2,11 +2,12 @@
 @use "../style/colors";
 @use "../style/layout";
 
+
 .page {
     flex: 1;
     display: flex;
     align-items: flex-start;
-    background-color: colors.$color-page;
+    background-color: var(--color-page);
     min-height: calc(100vh - layout.$height-header - layout.$height-footer);
     padding-top: 0;
 
