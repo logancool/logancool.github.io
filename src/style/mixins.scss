@@ -1,6 +1,6 @@
-@import '../style/colors';
-@import '../style/layout';
-@import '../style/design';
+@use '../style/colors';
+@use '../style/layout';
+@use '../style/design';
 
 // resets
 @mixin reset-button {
@@ -62,19 +62,19 @@
 }
 
 @mixin at-iphone {
-    @include at($width-iphone) {
+    @include at(layout.$width-iphone) {
         @content;
     }
 }
 
 @mixin at-ipad {
-    @include at($width-ipad) {
+    @include at(layout.$width-ipad) {
         @content;
     }
 }
 
 @mixin at-desktop {
-    @include at($width-desktop) {
+    @include at(layout.$width-desktop) {
         @content;
     }
 }
@@ -91,27 +91,27 @@
 }
 
 @mixin underline-title {
-    border-bottom: $width-underline-title solid $color-secondary;
+    border-bottom: layout.$width-underline-title solid colors.$color-secondary;
 
     //only animate on desktop
     @include at-desktop {
-        clip-path: inset(0 0 calc(#{$width-underline-title} - 2px) 0);
+        clip-path: inset(0 0 calc(#{layout.$width-underline-title} - 2px) 0);
         &:hover {
             clip-path: inset(0 0 0 0);
-            transition: clip-path $transition;
+            transition: clip-path design.$transition;
         }
     }
 }
 
 @mixin underline-link {
-    border-bottom: $width-underline-link solid $color-secondary;
+    border-bottom: layout.$width-underline-link solid colors.$color-secondary;
 
     //only animate on desktop
     @include at-desktop {
-        clip-path: inset(0 0 calc(#{$width-underline-link} - 1px) 0);
+        clip-path: inset(0 0 calc(#{layout.$width-underline-link} - 1px) 0);
         &:hover {
             clip-path: inset(0 0 0 0);
-            transition: clip-path $transition;
+            transition: clip-path design.$transition;
         }
     }
 }

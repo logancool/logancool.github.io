@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import data from './data';
 import PageContent from '../../layout/PageContent';
 import './styles.module.scss';
@@ -20,7 +20,7 @@ const ResumePage = () => (
                                 <strong>{job.company}</strong>
                                 {` \u2014 ${job.title}`}
                             </h3>
-                            <h5 styleName="section-date">{`${job.date.start} \u2014 ${job.date.end}`}</h5>
+                            <h5 styleName="section-date">{`${job.date.start} - ${job.date.end}`}</h5>
 
                             <ul styleName="skills">
                                 {job.skills.map(skill => (

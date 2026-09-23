@@ -1,179 +1,125 @@
-@import '../../../style/mixins';
-
-.home {
-    //add style
-}
+@use '../../../style/mixins';
+@use "../../../style/colors";
+@use "../../../style/fonts";
+@use "../../../style/layout";
 
 .work {
+    padding: 2rem 1rem 3rem;
+
+    @include mixins.at-ipad {
+        padding: 3rem 2rem 5rem;
+    }
+}
+
+.intro {
+    @include mixins.reset-p;
+    max-width: 38rem;
+    margin-bottom: 3rem;
+    color: colors.$color-secondary;
+    font-size: layout.$font-size-p-large;
+    line-height: 1.55;
+}
+
+.company {
     display: grid;
-    align-content: space-evenly;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 2rem 0;
+    border-top: 1px solid colors.$color-border;
+
+    @include mixins.at-ipad {
+        grid-template-columns: 7rem minmax(0, 42rem);
+        gap: 2rem;
+    }
+}
+
+.companyMark {
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    width: calc(100% - 2px); // grid borders
+    width: 4rem;
+    height: 4rem;
 
-    // since the page isn't large enough to fill 100% height
-    @include at-ipad {
-
-        align-items: center;
-        grid-row: 3;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 'amazon-logo amazon amazon' 'zappos zappos zappos-logo' 'zaw-demo zaw-demo zaw-demo' 'sfix-logo sfix sfix' 'ft ft ft-logo' 'side side side';
+    @include mixins.at-ipad {
+        width: 7rem;
+        height: 7rem;
     }
 
-    @include at-desktop {
-        align-content: normal;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
+}
+
+.companyLogoLink {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.amazonMark {
+    img {
+        height: auto;
+    }
+}
+
+.companyContent {
+    min-width: 0;
+}
+
+.dates,
+.caption {
+    @include mixins.reset-p;
+    color: colors.$color-border;
+    font-size: 0.85rem;
 }
 
 .workplace {
-    @include reset-h2;
+    @include mixins.reset-h2;
+    display: table;
+    margin: 0.25rem 0 0.35rem;
+    font-size: layout.$font-size-header;
 
-    display: table; //for underline width
-    margin-bottom: 0.5rem;
+    @include mixins.underline-title;
 
-    @include underline-title;
-
-    a {
-        @include reset-link;
-    }
 }
 
 .p {
-    @include reset-p;
+    @include mixins.reset-p;
+    max-width: 42rem;
+    margin-bottom: 1rem;
+    line-height: 1.65;
 }
 
 .link {
-    @include reset-link;
-    @include underline-link;
+    @include mixins.reset-link;
+    @include mixins.underline-link;
 }
 
-.amazon,
-.sfix,
-.ft,
-.zappos {
-    @include reset-link;
-    padding: 1rem;
-    max-width: 48rem;
-    pointer-events: auto;
-}
+.details {
+    margin: 0;
+    padding-left: 1.1rem;
+    max-width: 42rem;
+    line-height: 1.6;
 
-.sfix {
-    @include at-ipad {
-        grid-area: sfix;
-    }
-}
-
-.amazon {
-    @include at-ipad {
-        min-height: 10rem;
-        grid-area: amazon;
-    }
-}
-
-.zappos {
-    @include at-ipad {
-        min-height: 10rem;
-        grid-area: zappos;
-    }
-}
-
-.sfix-logo {
-    display: none;
-
-    @include at-ipad {
-        display: block;
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        grid-area: sfix-logo;
-        justify-self: center;
-        align-self: center;
-    }
-}
-
-.amazon-logo {
-    display: none;
-
-    @include at-ipad {
-        display: block;
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        grid-area: amazon-logo;
-        justify-self: center;
-        align-self: center;
-    }
-}
-
-.zappos-logo {
-    display: none;
-
-    @include at-ipad {
-        display: block;
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        grid-area: zappos-logo;
-        justify-self: center;
-        align-self: center;
-    }
-}
-
-.ft {
-    @include at-ipad {
-        grid-area: ft;
-    }
-}
-
-.ft-logo {
-    display: none;
-
-    @include at-ipad {
-        display: block;
-        width: 120px;
-        height: 120px;
-        object-fit: contain;
-        grid-area: ft-logo;
-        justify-self: center;
-        align-self: center;
-    }
-}
-
-.side {
-    padding: 1rem;
-
-    h2 {
-        @include reset-h2;
-        margin-bottom: 0.5rem;
-    }
-
-    @include at-ipad {
-        grid-area: side;
-    }
-}
-
-.zawDemo {
-    padding: 1rem;
-    text-align: center;
-    
-    @include at-ipad {
-        grid-area: zaw-demo;
+    li {
+        padding-left: 0.35rem;
+        margin-bottom: 0.45rem;
     }
 }
 
 .zawImage {
+    display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 32rem;
     height: auto;
+    margin-top: 1.5rem;
 }
 
-.zawCaption {
-    @include reset-p;
-    font-size: 0.9em;
-    color: #666;
+.caption {
+    margin-top: 0.4rem;
     font-style: italic;
-    margin-top: 0.5rem;
-}
-
-.link .code {
-    background-color: $color-hover-primary;
 }

@@ -6,6 +6,10 @@ import './style/application.scss';
 const container = document.getElementById("app");
 
 // Create a root.
+if (!container) {
+	throw new Error('The app container was not found.');
+}
+
 const root = ReactDOM.createRoot(container);
 
 // Initial render

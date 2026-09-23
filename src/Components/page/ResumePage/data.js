@@ -1,21 +1,33 @@
 const data = {
     headline: {
-        name: '',
-        role: '',
+        name: 'Logan Cool',
+        role: 'Frontend Software Engineer',
     },
     experience: [
         {
-            company: 'Amazon',
+            company: 'Amazon LEO',
             title: 'SDE II',
             date: {
                 start: '2023',
                 end: 'Present',
             },
             skills: [
-                'Built Next.js workwear shopping site with employee onboarding',
-                'Built sales intake site zapposatwork.com and support partners onboarding',
-                'Refactored authentication and framework for partner subsidy management CMS',
-                'Improve /returns flow and order tracking for zappos.com',
+                'Build front-end systems for satellite constellation visualization',
+                'Develop mapping interfaces with MapLibre, PMTiles, Zustand, TanStack, and Vite',
+                'Integrate Amazon Location Service, CloudFront, and Cognito',
+            ],
+        },
+        {
+            company: 'Zappos',
+            title: 'Frontend Software Engineer',
+            date: {
+                start: '2023',
+                end: '2025',
+            },
+            skills: [
+                'Built a Next.js workwear shopping experience and sales intake site for Zappos at Work',
+                'Refactored authentication and partner subsidy management CMS workflows',
+                'Improved returns flow and order tracking for zappos.com',
             ],
         },
         {
@@ -117,9 +129,8 @@ const data = {
         ]
     },
     contact: {
-        phone: '(628) 444-9264',
         email: 'coollogan88@gmail.com',
-        location: 'San Diego, CA',
+        location: 'San Francisco, CA',
     },
 };
 

@@ -1,6 +1,8 @@
 const data = {
-    intro: "Hi there 👋, I'm Logan.",
-    loves: ['rockets', 'code', 'music', 'volleyball', 'hiking', 'tacos'],
+    eyebrow: 'Frontend software engineer · San Francisco',
+    intro: 'I build for',
+    buildWords: ['you', 'humans', 'teams', 'fun', 'tacos'],
+    loves: ['rockets', 'code', 'music', 'volleyball', 'ultra running'],
 };
 
 export default data;

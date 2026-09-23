@@ -4,60 +4,109 @@ import './styles.module.scss';
 
 const WorkPage = () => (
     <PageContent>
-        <div styleName="work">
-            <div styleName="amazon" href="https://www.amazon.com/">
-                <h2 styleName="workplace">
-                    <a href="https://www.amazon.com/">Amazon</a>
-                </h2>
-                <p styleName="p">
-                    Since 2023, I've built a Next.js workwear shopping site with employee onboarding and the sales
-                    intake site&nbsp;
-                    <a styleName="link" href="https://zapposatwork.com">
-                        zapposatwork.com
+        <main styleName="work">
+            <p styleName="intro">
+                Selected experience building front-end products, internal tools,
+                and customer-facing systems.
+            </p>
+
+            <section styleName="company">
+                <div styleName="companyMark amazonMark">
+                    <a styleName="companyLogoLink" href="https://leo.amazon.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/amazon_leo_logo.png" alt="Amazon Leo logo" />
                     </a>
-                    &nbsp;with partner onboarding support. I refactored authentication and framework for partner subsidy
-                    management CMS and improved /returns flow and order tracking for zappos.com.
-                </p>
-            </div>
-            <img styleName="amazon-logo" src="/images/amazon_logo.png" alt="Amazon logo" />
-            <img styleName="zappos-logo" src="/images/zappos_logo.png" alt="Zappos logo" />
-            <div styleName="zawDemo">
-                <img src="/images/zaw_shop.png" alt="workwear shopping experience for a demo customer" styleName="zawImage" />
-                <p styleName="zawCaption">Workwear shopping experience for a demo customer</p>
-            </div>
-            <div styleName="sfix" href="https://www.stitchfix.com/">
-                <h2 styleName="workplace">
-                    <a href="https://www.stitchfix.com/"> Stitch Fix </a>
-                </h2>
-                <p styleName="p">
-                    From 2017-2023, I built logged-out&nbsp;
-                    <a styleName="link" href="https://www.stitchfix.com">
-                        stitchfix.com
+                </div>
+                <div styleName="companyContent">
+                    <p styleName="dates">2023–present</p>
+                    <p styleName="p">
+                        I build visualization software for satellite constellation
+                        planning, turning complex geospatial data into clear,
+                        responsive tools for teams making decisions at scale.
+                    </p>
+                    <ul styleName="details">
+                        <li>
+                            Built mapping interfaces with MapLibre, PMTiles,
+                            Zustand, TanStack, and Vite.
+                        </li>
+                        <li>
+                            Integrated Amazon Location Service with CloudFront and
+                            Cognito for a secure, reliable product experience.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section styleName="company">
+                <div styleName="companyMark">
+                    <a styleName="companyLogoLink" href="https://www.zappos.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/zappos_logo.png" alt="Zappos logo" />
                     </a>
-                    &nbsp;from /women to 100+ pages. I created a front end focussed team responsible for visitor
-                    signups, developed internal WYSIWYG editor that automates page development, rebuilt front end stack
-                    leveraging babel, webpack and ECMAScript 6, and led technical projects collaborating across seo,
-                    growth, marketing, security, devops, and algorithms.
-                </p>
-            </div>
-            <img styleName="sfix-logo" src="/images/sfix_logo.png" alt="Stitch Fix logo" />
-            <div styleName="ft" href="https://www.flashtalking.com/">
-                <h2 styleName="workplace">
-                    <a href="https://www.flashtalking.com/">Flashtalking</a>
-                </h2>
-                <p styleName="p">
-                    From 2015-2017, I built JavaScript/HTML 5 creatives for clients delivering over 4 million
-                    impressions. I led on-site technical presentations for client tools, led small team meetings
-                    discussing creative development triaging issues and outlining solutions, and led QA efforts
-                    implementing new practices and policies.
-                </p>
-            </div>
-            <img styleName="ft-logo" src="/images/ft_logo.png" alt="Flashtalking logo" />
-            {/* <div styleName="side" href="https://www.flashtalking.com/">
-            <h2>Side Project</h2>
-            <a styleName="link code" href="https://nexpisode.com"> Nexpisode </a>
-            </div> */}
-        </div>
+                </div>
+                <div styleName="companyContent">
+                    <p styleName="dates">2023–2025</p>
+                    <p styleName="p">
+                        Built a Next.js workwear shopping experience and sales
+                        intake site for <a styleName="link" href="https://zapposatwork.com">Zappos at Work</a>,
+                        including partner onboarding support.
+                    </p>
+                    <ul styleName="details">
+                        <li>
+                            Refactored authentication and the partner subsidy
+                            management CMS.
+                        </li>
+                        <li>
+                            Improved the returns flow and order tracking for
+                            <a styleName="link" href="https://www.zappos.com/"> zappos.com</a>.
+                        </li>
+                    </ul>
+                    <img
+                        styleName="zawImage"
+                        src="/images/zaw_shop.png"
+                        alt="Zappos at Work shopping experience"
+                    />
+                    <p styleName="caption">Zappos at Work shopping experience</p>
+                </div>
+            </section>
+
+            <section styleName="company">
+                <div styleName="companyMark">
+                    <a styleName="companyLogoLink" href="https://www.stitchfix.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sfix_logo.png" alt="Stitch Fix logo" />
+                    </a>
+                </div>
+                <div styleName="companyContent">
+                    <p styleName="dates">2017–2023</p>
+                    <p styleName="p">
+                        Built the logged-out stitchfix.com experience from /women
+                        to more than 100 pages and led a front-end-focused team
+                        responsible for visitor signups.
+                    </p>
+                    <p styleName="p">
+                        Created an internal WYSIWYG editor, rebuilt the front-end
+                        stack with Babel and Webpack, and led technical projects
+                        across SEO, growth, marketing, security, DevOps, and
+                        algorithms.
+                    </p>
+                </div>
+            </section>
+
+            <section styleName="company">
+                <div styleName="companyMark">
+                    <a styleName="companyLogoLink" href="https://www.flashtalking.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/ft_logo.png" alt="Flashtalking logo" />
+                    </a>
+                </div>
+                <div styleName="companyContent">
+                    <p styleName="dates">2015–2017</p>
+                    <p styleName="p">
+                        Built JavaScript and HTML5 creatives for clients delivering
+                        more than four million impressions, led technical
+                        presentations and team meetings, and improved QA practices.
+                    </p>
+                </div>
+            </section>
+        </main>
     </PageContent>
 );
+
 export default WorkPage;

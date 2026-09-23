@@ -3,6 +3,31 @@ $color-secondary: #383838;
 $color-page: white;
 $color-border: #888;
 
+// Rocket Taco Theme Colors
+$color-rocket-red: #ff4d4d;
+$color-taco-yellow: #ffcc00;
+$color-lettuce-green: #2ecc71;
+$color-taco-shell: #f1c40f;
+$color-deep-space: #2c3e50;
+
 //hovers
 $color-hover-primary: rgba($color-primary, 0.5);
 $color-hover-secondary: rgba($color-secondary, 0.5);
+
+:root {
+	color-scheme: light;
+	--color-page: #ffffff;
+	--color-surface: #f7f7f7;
+	--color-text: #383838;
+	--color-border: #888888;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+		--color-page: #171717;
+		--color-surface: #292929;
+		--color-text: #eeeeec;
+		--color-border: #777777;
+	}
+}

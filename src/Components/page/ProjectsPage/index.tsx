@@ -24,10 +24,10 @@ const ProjectsPage = () => {
             <div styleName="project">
                 <h3>
                     <a href="https://daddies-ten.vercel.app" target="_blank" rel="noopener noreferrer">
-                        Daddies - Dad Social Network
+                        Dad, meet dad
                     </a>
                 </h3>
-                <img styleName="projectImage" src="/images/daddies.jpg" alt="Daddies app screenshot" />
+                <img styleName="projectImage" src="/images/daddies.jpg" alt="Location-based social platform screenshot" />
                 <p styleName="description">
                     A location-based social app for dads to connect with other dads nearby. Features include interactive map with real-time dad locations, 
                     profile system with dad bod selection, meetup requests, and SMS authentication.
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
                 <div styleName="techStack">
                     <strong>Tech Stack:</strong> Next.js 14, React, TypeScript, Tailwind CSS, Firebase Auth, Firestore, Google Maps API
                 </div>
-                <div styleName="loginInfo">To demo: Use phone number 555-123-4567 with verification code 123456.</div>
+                <div styleName="loginInfo">Demo access is available through the hosted application.</div>
                 <div styleName="links">
                     <a href="https://daddies-ten.vercel.app" target="_blank" rel="noopener noreferrer">
                         Live Demo
@@ -60,7 +60,7 @@ const ProjectsPage = () => {
                 <div styleName="techStack">
                     <strong>Tech Stack:</strong> Next.js, Firebase Authentication, Tailwind CSS, TypeScript
                 </div>
-                <div styleName="loginInfo">To demo: Use phone number 555-123-4567 with verification code 123456.</div>
+                <div styleName="loginInfo">Demo access is available through the hosted application.</div>
                 <div styleName="links">
                     <a href="https://farmers-market-one.vercel.app/" target="_blank" rel="noopener noreferrer">
                         Live Demo

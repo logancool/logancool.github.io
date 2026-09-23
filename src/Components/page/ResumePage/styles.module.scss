@@ -1,10 +1,12 @@
-@import '../../../style/layout';
-@import '../../../style/mixins';
+@use '../../../style/layout';
+@use '../../../style/mixins';
+@use "../../../style/design";
+@use "../../../style/fonts";
 
 .resume {
     padding: 1rem;
 
-    @include at-ipad {
+    @include mixins.at-ipad {
         padding: 0;
     }
 }
@@ -13,13 +15,13 @@
 }
 
 .section-title {
-    font-family: $font-regular;
+    font-family: fonts.$font-regular;
     margin-bottom: 0;
 }
 
 .section-date {
-    font-family: $font-regular;
-    @include reset-h5;
+    font-family: fonts.$font-regular;
+    @include mixins.reset-h5;
 }
 
 .columns {
@@ -29,30 +31,30 @@
 }
 
 .headline-name {
-    font: $font-header;
+    font: design.$font-header;
 }
 
 .headline-description {
-    font-size: $font-size-p-small;
+    font-size: layout.$font-size-p-small;
 }
 
 .skills {
-    font-family: $font-light;
-    font-size: $font-size-li;
+    font-family: fonts.$font-light;
+    font-size: layout.$font-size-li;
 }
 
 .skill {
 }
 
 .download {
-    @include reset-h3;
+    @include mixins.reset-h3;
 
     display: table; //for underline width
     margin-bottom: 0.5rem;
 
-    @include underline-title;
+    @include mixins.underline-title;
 
     a {
-        @include reset-link;
+        @include mixins.reset-link;
     }
 }

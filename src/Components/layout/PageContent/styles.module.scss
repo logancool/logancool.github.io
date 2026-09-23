@@ -1,10 +1,15 @@
-@import '../../../style/mixins';
+@use '../../../style/mixins';
+@use "../../../style/layout";
 
 .page-content {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    max-width: 52rem;
-    margin: $padding-page auto;
-    padding-bottom: calc(#{$height-footer} + 2rem);
+    background-color: var(--color-page);
+    max-width: 64rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+    @include mixins.at-ipad {
+        margin: layout.$padding-page auto;
+    }
 }

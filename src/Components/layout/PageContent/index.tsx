@@ -1,5 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './styles.module.scss';
 
-const PageContent = ({ children }) => <div styleName="page-content">{children}</div>;
+type PageContentProps = {
+	children: ReactNode;
+};
+
+const PageContent = ({ children }: PageContentProps) => (
+	<div styleName="page-content">{children}</div>
+);
 export default PageContent;

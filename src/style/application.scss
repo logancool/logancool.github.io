@@ -1,3 +1,4 @@
-@import 'fonts/webfonts';
+@use 'fonts/webfonts';
+@use 'globals';
 
-@include webfonts;
+@include webfonts.webfonts;

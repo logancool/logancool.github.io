@@ -1,13 +1,13 @@
-@import '../style/colors';
-@import '../style/layout';
-@import '../style/fonts';
+@use '../style/colors';
+@use '../style/layout';
+@use '../style/fonts';
 
 //fonts
-$font-header: #{$font-size-header}/ #{$height-line} $font-bold;
-$font-header-large: #{$font-size-header-large}/ #{$height-line-large} $font-bold;
+$font-header: #{layout.$font-size-header}/ #{layout.$height-line} fonts.$font-bold;
+$font-header-large: #{layout.$font-size-header-large}/ #{layout.$height-line-large} fonts.$font-bold;
 
 //box-shadows
-$box-shadow: 5px 10px $color-border;
+$box-shadow: 5px 10px colors.$color-border;
 
 //transition
 $transition: ease-out 200ms;

@@ -1,18 +1,18 @@
-@import '../../../style/mixins';
+@use '../../../style/mixins';
 
 .projects {
     padding: 1rem;
     
-    @include at-ipad {
+    @include mixins.at-ipad {
         padding: 0;
     }
 }
 
 .projectTitle {
-    @include reset-h2;
+    @include mixins.reset-h2;
     display: table;
     margin-bottom: 1.5rem;
-    @include underline-title;
+    @include mixins.underline-title;
 }
 
 .project {
@@ -28,8 +28,8 @@
         margin-bottom: 1rem;
         
         a {
-            @include reset-link;
-            @include underline-link;
+            @include mixins.reset-link;
+            @include mixins.underline-link;
             font-size: 1.4rem;
         }
     }
@@ -37,7 +37,8 @@
 
 .projectImage {
     margin: 1rem 0;
-    max-width: 100%;
+    width: 100%;
+    max-width: 20rem;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,7 +46,7 @@
 }
 
 .description {
-    @include reset-p;
+    @include mixins.reset-p;
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -72,8 +73,8 @@
     gap: 1rem;
     
     a {
-        @include reset-link;
-        @include underline-link;
+        @include mixins.reset-link;
+        @include mixins.underline-link;
         display: inline-block;
         padding: 0.5rem 0;
     }

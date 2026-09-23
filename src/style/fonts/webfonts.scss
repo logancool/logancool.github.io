@@ -1,19 +1,19 @@
 // If changing font only change $font-name in ../fonts and ensure all fonts defined
 // match what font faces defined in below
-@import '../fonts';
+@use '../fonts';
 
 @mixin webfonts {
-    $font-extra-light-path: './fonts/#{$font}/#{$font}-extra-light.ttf' !default;
-    $font-light-path: './fonts/#{$font}/#{$font}-light.ttf' !default;
-    $font-regular-path: './fonts/#{$font}/#{$font}-regular.ttf' !default;
+    $font-extra-light-path: './fonts/#{fonts.$font}/#{fonts.$font}-extra-light.ttf' !default;
+    $font-light-path: './fonts/#{fonts.$font}/#{fonts.$font}-light.ttf' !default;
+    $font-regular-path: './fonts/#{fonts.$font}/#{fonts.$font}-regular.ttf' !default;
     //$font-medium-path: './fonts/#{$font}/#{$font}-medium.ttf' !default;
     //$font-semi-bold-path: './fonts/#{$font}/#{$font}-semi-bold.ttf' !default;
-    $font-bold-path: './fonts/#{$font}/#{$font}-bold.ttf' !default;
-    $font-extra-bold-path: './fonts/#{$font}/#{$font}-extra-bold.ttf' !default;
+    $font-bold-path: './fonts/#{fonts.$font}/#{fonts.$font}-bold.ttf' !default;
+    $font-extra-bold-path: './fonts/#{fonts.$font}/#{fonts.$font}-extra-bold.ttf' !default;
 
     //regular
     @font-face {
-        font-family: '#{$font} Regular';
+        font-family: '#{fonts.$font} Regular';
         src: url($font-regular-path) format('truetype');
         font-weight: normal;
         font-style: normal;
@@ -31,7 +31,7 @@
 
     //bold
     @font-face {
-        font-family: '#{$font} Bold';
+        font-family: '#{fonts.$font} Bold';
         src: url($font-bold-path) format('truetype');
         font-weight: normal;
         font-style: normal;
@@ -49,7 +49,7 @@
 
     //extra-bold
     @font-face {
-        font-family: '#{$font} Extra Bold';
+        font-family: '#{fonts.$font} Extra Bold';
         src: url($font-extra-bold-path) format('truetype');
         font-weight: normal;
         font-style: normal;
@@ -58,7 +58,7 @@
 
     //light
     @font-face {
-        font-family: '#{$font} Light';
+        font-family: '#{fonts.$font} Light';
         src: url($font-light-path) format('truetype');
         font-weight: normal;
         font-style: normal;
@@ -67,10 +67,11 @@
 
     //extra-light
     @font-face {
-        font-family: '#{$font} Extra Light';
+        font-family: '#{fonts.$font} Extra Light';
         src: url($font-extra-light-path) format('truetype');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
     }
+
 }

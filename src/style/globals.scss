@@ -1,5 +1,8 @@
-@import 'fonts/webfonts';
-@import '../style/mixins'; // color and layout are included in mixins
+@use 'fonts/webfonts';
+@use '../style/mixins'; // color and layout are included in mixins
+@use "colors";
+@use "fonts";
+@use "layout";
 
 input {
     margin: 0;
@@ -7,15 +10,17 @@ input {
 
 body {
     margin: 0;
-    font-family: $font-light;
-    line-height: $height-line;
+    font-family: fonts.$font-light;
+    line-height: layout.$height-line;
+    color: var(--color-text);
+    background-color: var(--color-page);
 
-    @include at-ipad {
-        line-height: $height-line-large;
+    @include mixins.at-ipad {
+        line-height: layout.$height-line-large;
     }
 }
 
 ::selection {
-    color: $color-secondary;
-    background: $color-hover-primary;
+    color: colors.$color-secondary;
+    background: colors.$color-hover-primary;
 }

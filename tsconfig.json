@@ -2,6 +2,7 @@
     "compilerOptions": {
         "target": "esnext", // Specify ECMAScript target version
         "lib": ["dom", "dom.iterable", "esnext"], // List of library files to be included in the compilation
+        "types": [], // Only include ambient types imported by the source
         "allowJs": true, // Allow JavaScript files to be compiled
         "skipLibCheck": true, // Skip type checking of all declaration files
         "esModuleInterop": true, // Disables namespace imports (import * as fs from "fs") and enables CJS/AMD/UMD style imports (import fs from "fs")

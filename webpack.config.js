@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const sass = require('sass-embedded');
 const SRC_DIR = path.join(__dirname, '/src');
 
 module.exports = (_, argv) => {
@@ -32,14 +33,15 @@ module.exports = (_, argv) => {
                     use: [
                         { loader: isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader },
                         'css-loader',
+                        'postcss-loader',
                         {
                             loader: 'sass-loader',
                             options: {
+                                api: 'modern-compiler',
+                                implementation: sass,
                                 sourceMap: isDevelopment,
                             },
                         },
-                        'postcss-loader',
-                        'sass-loader',
                     ],
                 },
                 {
@@ -60,7 +62,13 @@ module.exports = (_, argv) => {
                             },
                         },
                         'postcss-loader',
-                        'sass-loader',
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                api: 'modern-compiler',
+                                implementation: sass,
+                            },
+                        },
                     ],
                 },
                 {
@@ -101,13 +109,13 @@ module.exports = (_, argv) => {
             }),
             new webpack.HotModuleReplacementPlugin(),
             new HtmlWebpackPlugin({
-                title: 'Hello, I am Mr. Logan Cool',
+                title: 'Logan Cool | Frontend Software Engineer',
                 template: './src/utils/root.html',
                 favicon: './favicon.ico'
             }),
             new MiniCssExtractPlugin({
-                filename: '[name].[hash].css',
-                chunkFilename: '[id].[hash].css',
+                filename: '[name].[contenthash].css',
+                chunkFilename: '[id].[contenthash].css',
             }),
         ],
     };

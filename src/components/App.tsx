@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import HomePage from './page/HomePage';
 import ResumePage from './page/ResumePage';
 import StackPage from './page/StackPage';
@@ -16,7 +16,7 @@ const AppContent = () => {
     const hideFooter = location.pathname === '/stack';
     
     return (
-        <>
+        <div styleName="app">
             <Header />
             <div styleName="page">
                 <Routes>
@@ -30,7 +30,7 @@ const AppContent = () => {
                 </Routes>
             </div>
             {!hideFooter && <Footer />}
-        </>
+        </div>
     );
 };
 

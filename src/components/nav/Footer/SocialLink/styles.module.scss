@@ -1,17 +1,18 @@
-@import '../../../../style/mixins';
+@use '../../../../style/mixins';
+@use "../../../../style/design";
 
 .social-link {
-    @include reset-svg;
+    @include mixins.reset-svg;
 
-    fill: $color-primary;
+    fill: var(--color-text);
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.25rem;
 
-    width: $size-footer-icon;
-    height: $size-footer-icon;
+    width: 1.25rem;
+    height: 1.25rem;
 
     &:hover {
-        fill: $color-secondary;
-        transition: $transition;
+        fill: var(--color-text);
+        transition: design.$transition;
     }
 }
